@@ -1,0 +1,15 @@
+body, footer {
+    text-align: center;
+}
+
+.content {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Just a placeholder to make the template image until we add in the graph */
+#graph {
+    width: 100%;
+    height: 300px; 
+    background-color: #f4f4f4;
+}
