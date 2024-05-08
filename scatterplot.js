@@ -1,4 +1,4 @@
-function init() {
+function initScatterplot() {
     var w = 550;
     var h = 300;
     var paddingXScale = 60;
@@ -105,4 +105,4 @@ function init() {
 
 
 
-window.onload = init;
+window.onload = initScatterplot;
