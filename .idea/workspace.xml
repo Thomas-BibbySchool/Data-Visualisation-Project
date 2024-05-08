@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ac541aae-24fb-4879-bf55-0567b534b23a" name="Changes" comment="Created index page" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +26,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -39,8 +43,12 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/hasin/Desktop/Data Visualisation/Labs",
+    "git-widget-placeholder": "develop",
+    "last_opened_file_path": "C:/Users/hasin/Desktop/Data Visualisation",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -62,6 +70,7 @@
       <updated>1713767006930</updated>
       <workItem from="1713767013149" duration="205000" />
       <workItem from="1713772552249" duration="87000" />
+      <workItem from="1714977937906" duration="685000" />
     </task>
     <task id="LOCAL-00001" summary="Created index page">
       <option name="closed" value="true" />

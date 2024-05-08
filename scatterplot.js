@@ -44,7 +44,7 @@ function init() {
         .scale(yScale); //scales according to the scale function we created for the vertical direction
 
     //creating a svg element
-    var svg = d3.select("#chart")
+    var svg = d3.select("#scatterplot")
         .append("svg")
         .attr("width", w)
         .attr("height", h);
