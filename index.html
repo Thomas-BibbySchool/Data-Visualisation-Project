@@ -1,41 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Visualization</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="project.js"></script>
     <script src="scatterplot.js"></script>
     <script src="heatmap.js"></script>
     <script src="linegraph.js"></script>
-    <script src="project.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="content">
-        <h1>The effects of hospital capacity on Covid deaths</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut purus elit, vestibulum ut, placerat ac,
-            adipiscing vitae, felis. Curabitur dictum gravida mauris.</p>
-        <br>
-        <div id="scatterplot"></div>
-        <br>
+      <h1>The effects of hospital capacity on Covid deaths</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut purus elit,
+        vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum
+        gravida mauris.
+      </p>
+      <br />
+      <div id="scatterplot"></div>
+      <br />
 
-        <p>Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque.
-            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+      <p>
+        Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna.
+        Donec vehicula augue eu neque. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas.
+      </p>
 
-        <div id="heatmap">
-        </div>
+      <div>
+        <button id="toggleData" onclick="toggle()">Toggle Data</button>
+        <div id="heatmap"></div>
+        <input
+          type="range"
+          min="2018"
+          max="2021"
+          value="2018"
+          step="1"
+          id="yearSlider"
+          oninput="updateHeatmap(this.value)"
+        />
+        <label for="yearSlider" id="yearLabel">Year: 2018</label>
+      </div>
 
-        <div id="linegraph">
-        </div>
+      <div id="linegraph"></div>
     </div>
-</body>
-<footer>
+
+    <div
+      id="tooltip"
+      class="tooltip"
+      style="opacity: 0; position: absolute; pointer-events: none"
+    ></div>
+  </body>
+  <footer>
     <p>Student Details</p>
     <p>Hasindu Vithanage - 104824660 and Thomas Bibby - 102564676</p>
-</footer>
-
+  </footer>
 </html>
