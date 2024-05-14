@@ -1,108 +1,139 @@
-function initScatterplot() {
+document.addEventListener('DOMContentLoaded', function initScatterplot() {
     var w = 550;
     var h = 300;
     var paddingXScale = 60;
     var paddingYScale = 60;
-    var paddingTextX = 10;
 
+    // Load CSV data directly
+    d3.csv("./data/scatterplot_datatset.csv").then(function(data) {
+        if (!data.length) {
+            console.error("Data is empty or not loaded correctly");
+            return;
+        }
 
-    //generating a random dataset to prove the chart is scalable
-    var dataset = [];
-    var amountOfDataInDataset = 10;
-    //the Math.random(), generates a random number between 0 and 1 and then multiplies by 1000, so the range that will be present will be from 0 to 1000
-    var xDataRange = Math.random()*1000;
-    var yDataRange = Math.random()*1000;
-    var zDataRange = Math.random()*5; //creates a range from 0 to 5
-    for(var i = 0; i < amountOfDataInDataset; i++) {
-        //will generate a random number between 0 and 1000 and Math.floor() will round the number to a whole number
-        var newDataPointX = Math.floor(Math.random()*xDataRange);
-        var newDataPointY = Math.floor(Math.random()*yDataRange);
-        var newDataPointZ = 2 + Math.floor(Math.random()*zDataRange); //"2 + " is added so that the radius value is large enough to be visible
-        dataset.push([newDataPointX, newDataPointY, newDataPointZ]); //pushes the randomly generated data values into the dataset array
-    }
+        // Tooltip div setup
+        var tooltip = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0)
+            .style("position", "absolute")
+            .style("padding", "10px")
+            .style("background", "white")
+            .style("border", "1px solid #000")
+            .style("border-radius", "5px")
+            .style("pointer-events", "none"); // To prevent mouse events on the tooltip itself
 
-    var xScale = d3.scaleLinear() //creating a scale for the horizontal direction
-        .domain([0, //domain is created from the 0 to the maximum x value
-            d3.max(dataset, function(d) {
-                return d[0];
-            })])
-        .range([paddingXScale, w - paddingXScale]);
+        // Function to draw the scatterplot for a given year
+        function drawScatterPlot(year) {
+            // Filter the data for the selected year
+            var yearData = data.filter(d => +d.Year === year);
 
-    var yScale = d3.scaleLinear() //creating a scale for the vertical direction
-        .domain([0, //domain is created from the 0 to the maximum y value
-            d3.max(dataset, function(d) {
-                return d[1];
-            })])
-        .range([h - paddingYScale, paddingYScale]);
+            // Map the data to extract relevant fields and convert strings to numbers
+            var dataset = yearData.map(function(d) {
+                return {
+                    Country: d.Country,
+                    COU: d.COU,
+                    Year: +d.Year,
+                    ForeignPercent: +d['Foreign_%_Value'],
+                    HealthPerformance: +d['Health_Performance_Value']
+                };
+            });
 
-    var xAxis = d3.axisBottom() //creating the x-axis
-        .ticks(5)
-        .scale(xScale); //scale according to the scale function we created for the horizontal direction
+            // Define the scales for x and y axes
+            var xScale = d3.scaleLinear()
+                .domain([0, d3.max(dataset, d => d.ForeignPercent)])
+                .range([paddingXScale, w - paddingXScale]);
 
-    var yAxis = d3.axisLeft() //creating the y-axis
-        .ticks(5)
-        .scale(yScale); //scales according to the scale function we created for the vertical direction
+            var yScale = d3.scaleLinear()
+                .domain([0, d3.max(dataset, d => d.HealthPerformance)])
+                .range([h - paddingYScale, paddingYScale]);
 
-    //creating a svg element
-    var svg = d3.select("#scatterplot")
-        .append("svg")
-        .attr("width", w)
-        .attr("height", h);
+            // Clear previous SVG content
+            d3.select("#scatterplot svg").remove();
 
-    //creating a circle for each data point
-    svg.selectAll("circle")
-        .data(dataset)
-        .enter()
-        .append("circle")
-        .attr("cx", function(d, i) {
-            return xScale(d[0]); //x-coordinate
-        })
-        .attr("cy", function(d) {
-            return yScale(d[1]); //y-coordinate
-        })
-        .attr("r", function(d) {
-            return d[2]*2; //sets the radius
-        })
-        .attr("fill", function(d) {
-            if(d[0]>300 && d[1]>40) //condition for coloring and highlighting the circles
-            {
-                return "red";
-            }
-            else
-            {
-                return "black";
-            }
+            // Create the SVG element
+            var svg = d3.select("#scatterplot")
+                .append("svg")
+                .attr("width", w)
+                .attr("height", h);
+
+            // Create circles for each data point
+            var circles = svg.selectAll("circle")
+                .data(dataset)
+                .enter()
+                .append("circle")
+                .attr("cx", d => xScale(d.ForeignPercent))
+                .attr("cy", d => yScale(d.HealthPerformance))
+                .attr("r", 5)
+                .attr("fill", "blue")
+                .on("mouseover", function(event, d) {
+                    tooltip.transition()
+                        .duration(200)
+                        .style("opacity", .9);
+                    tooltip.html("Country: " + d.Country + "<br/>" +
+                        "% Foreign-trained doctors: " + d.ForeignPercent.toFixed(2) + "%" + "<br/>" +
+                        "Health Performance (% of all patients waiting more than 3 months): " + d.HealthPerformance.toFixed(2))
+                        .style("left", (event.pageX) + "px")
+                        .style("top", (event.pageY - 28) + "px");
+                })
+                .on("mouseout", function(d) {
+                    tooltip.transition()
+                        .duration(500)
+                        .style("opacity", 0);
+                });
+
+            // Create text labels for each data point
+            svg.selectAll("text.data-label")
+                .data(dataset)
+                .enter()
+                .append("text")
+                .attr("class", "data-label")
+                .attr("x", d => xScale(d.ForeignPercent) + 10)
+                .attr("y", d => yScale(d.HealthPerformance) + 5)
+                .text(d => d.COU)
+                .attr("font-size", "10px")
+                .attr("fill", "grey");
+
+            // Create axes
+            var xAxis = d3.axisBottom(xScale).ticks(5);
+            var yAxis = d3.axisLeft(yScale).ticks(5);
+
+            svg.append("g")
+                .attr("class", "axis")
+                .attr("transform", `translate(0,${h - paddingYScale})`)
+                .call(xAxis);
+
+            svg.append("g")
+                .attr("class", "axis")
+                .attr("transform", `translate(${paddingXScale},0)`)
+                .call(yAxis);
+
+            // Adding labels for the axes
+            // X-axis label
+            svg.append("text")
+                .attr("text-anchor", "end")
+                .attr("x", w / 2 + 130)
+                .attr("y", h - 10)
+                .text("Percentage of foreign-trained doctors");
+
+            // Y-axis label
+            svg.append("text")
+                .attr("text-anchor", "end")
+                .attr("transform", "rotate(-90)")
+                .attr("y", 20)
+                .attr("x", -h / 2 + paddingYScale)
+                .text("Healthcare Performance");
+        }
+
+        // Initial plot
+        drawScatterPlot(2018);
+
+        // Update the plot when the slider value changes
+        document.getElementById('yearSlider').addEventListener('input', function() {
+            var selectedYear = +this.value;
+            document.getElementById('yearDisplay').textContent = selectedYear;
+            drawScatterPlot(selectedYear);
         });
-
-    //adds text labels for each circle drawn
-    svg.selectAll("text")
-        .data(dataset)
-        .enter()
-        .append("text")
-        .text(function(d) {
-            return d[0] + "," + d[1]; //displays the coordinate values
-        })
-        .attr("x", function(d, i) {
-            return xScale(d[0])+paddingTextX; //x-coordinate
-        })
-        .attr("y", function(d) {
-            return (yScale(d[1])); //y-coordinate
-        });
-
-    //g tag allows to transform all the items within the g tag
-    //creating the x-axis
-    svg.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(0, " + (h - paddingYScale) + ")") //translating the x-axis to the placement position
-        .call(xAxis);
-
-    //creating the y-axis
-    svg.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(" + paddingXScale + ", 0)") //translating the y-axis to the placement position
-        .call(yAxis);
-}
-
-
-
-window.onload = initScatterplot;
+    }).catch(function(error) {
+        console.error("Error loading or parsing the data:", error);
+    });
+});

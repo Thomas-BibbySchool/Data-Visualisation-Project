@@ -1,0 +1,26 @@
+COU,Country,Variable,Year,Foreign_%_Value,Health_Performance_Value
+CHL,Chile,% of foreign-trained doctors,2018,22.74,63
+CHL,Chile,% of foreign-trained doctors,2019,20.82,67
+CHL,Chile,% of foreign-trained doctors,2020,22.97,100
+CHL,Chile,% of foreign-trained doctors,2021,23.39,100
+HUN,Hungary,% of foreign-trained doctors,2018,8.09,48.5
+HUN,Hungary,% of foreign-trained doctors,2019,8.205,38.9
+HUN,Hungary,% of foreign-trained doctors,2020,8.18,61.2
+HUN,Hungary,% of foreign-trained doctors,2021,8.187,52.6
+IRL,Ireland,% of foreign-trained doctors,2018,41.64,60.7
+IRL,Ireland,% of foreign-trained doctors,2019,41.35,53.1
+IRL,Ireland,% of foreign-trained doctors,2020,40.19,76.2
+IRL,Ireland,% of foreign-trained doctors,2021,40.45,65.9
+NZL,New Zealand,% of foreign-trained doctors,2018,42.46,12.5
+NZL,New Zealand,% of foreign-trained doctors,2019,42.59,9.4
+NZL,New Zealand,% of foreign-trained doctors,2020,42.39,11.8
+NZL,New Zealand,% of foreign-trained doctors,2021,42.12,20.4
+SVN,Slovenia,% of foreign-trained doctors,2019,16.457,92.2
+SVN,Slovenia,% of foreign-trained doctors,2020,16.045,93.8
+SVN,Slovenia,% of foreign-trained doctors,2021,15.809,92.3
+SWE,Sweden,% of foreign-trained doctors,2018,28.793,8.5
+SWE,Sweden,% of foreign-trained doctors,2019,29.436,4.6
+SWE,Sweden,% of foreign-trained doctors,2020,30.215,3.5
+GBR,United Kingdom,% of foreign-trained doctors,2018,29.23,27.1
+GBR,United Kingdom,% of foreign-trained doctors,2019,30.34,29.6
+GBR,United Kingdom,% of foreign-trained doctors,2020,30.76,36.9
