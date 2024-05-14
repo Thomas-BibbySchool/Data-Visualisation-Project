@@ -8,7 +8,10 @@
 
     <link rel="stylesheet" href="styles.css">
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="scatterplot.js"></script>
+
+
+
+
     <script src="heatmap.js"></script>
     <script src="linegraph.js"></script>
     <script src="project.js"></script>
@@ -21,6 +24,16 @@
             adipiscing vitae, felis. Curabitur dictum gravida mauris.</p>
         <br>
         <div id="scatterplot"></div>
+        <br><br>
+        <!--    Scatter Plot Slider -->
+        <script src="scatterplot.js"></script>
+
+        <div id="slider">
+            <label for="yearSlider">Year: </label>
+            <input type="range" id="yearSlider" min="2018" max="2021" value="2018" step="1">
+            <span id="yearDisplay">2018</span>
+        </div>
+        <!--    Scatter Plot Slider     End -->
         <br>
 
         <p>Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque.
