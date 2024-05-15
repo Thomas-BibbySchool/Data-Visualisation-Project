@@ -1,0 +1,33 @@
+COU,Country,Year,Health_Performance_Value,Variable,Foreign_%_Value
+CHL,Chile,2018,62,% of foreign-trained doctors,22.74
+CHL,Chile,2019,67.75,% of foreign-trained doctors,20.82
+CHL,Chile,2020,85.25,% of foreign-trained doctors,22.97
+CHL,Chile,2021,88.25,% of foreign-trained doctors,23.39
+EST,Estonia,2018,89.73333333,% of foreign-trained doctors,3.86
+EST,Estonia,2019,89.53333333,% of foreign-trained doctors,3.94
+EST,Estonia,2020,93.46666667,% of foreign-trained doctors,4.06
+HUN,Hungary,2018,26.1,% of foreign-trained doctors,8.09
+HUN,Hungary,2019,24.87142857,% of foreign-trained doctors,8.205
+HUN,Hungary,2020,43.92857143,% of foreign-trained doctors,8.18
+HUN,Hungary,2021,43.34285714,% of foreign-trained doctors,8.187
+IRL,Ireland,2018,58.1,% of foreign-trained doctors,41.64
+IRL,Ireland,2019,55.17142857,% of foreign-trained doctors,41.35
+IRL,Ireland,2020,83.54285714,% of foreign-trained doctors,40.19
+IRL,Ireland,2021,59.51428571,% of foreign-trained doctors,40.45
+NZL,New Zealand,2018,20.55714286,% of foreign-trained doctors,42.46
+NZL,New Zealand,2019,25.54285714,% of foreign-trained doctors,42.59
+NZL,New Zealand,2020,28.87142857,% of foreign-trained doctors,42.39
+NZL,New Zealand,2021,40.47142857,% of foreign-trained doctors,42.12
+POL,Poland,2018,66.25,% of foreign-trained doctors,1.94
+POL,Poland,2019,66.75,% of foreign-trained doctors,2.09
+POL,Poland,2020,76,% of foreign-trained doctors,2.23
+POL,Poland,2021,60.25,% of foreign-trained doctors,2.69
+SVN,Slovenia,2019,73.74285714,% of foreign-trained doctors,16.457
+SVN,Slovenia,2020,74.75714286,% of foreign-trained doctors,16.045
+SVN,Slovenia,2021,69.02857143,% of foreign-trained doctors,15.809
+SWE,Sweden,2018,19.4,% of foreign-trained doctors,28.793
+SWE,Sweden,2019,25.3,% of foreign-trained doctors,29.436
+SWE,Sweden,2020,34.96666667,% of foreign-trained doctors,30.215
+GBR,United Kingdom,2018,32.12857143,% of foreign-trained doctors,29.23
+GBR,United Kingdom,2019,33.15714286,% of foreign-trained doctors,30.34
+GBR,United Kingdom,2020,39.88571429,% of foreign-trained doctors,30.76

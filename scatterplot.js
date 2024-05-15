@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function initScatterplot() {
     var paddingYScale = 60;
 
     // Load CSV data directly
-    d3.csv("./data/scatterplot_datatset.csv").then(function(data) {
+    d3.csv("./data/scatterplot_datatset2.csv").then(function(data) {
         if (!data.length) {
             console.error("Data is empty or not loaded correctly");
             return;
