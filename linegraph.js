@@ -34,19 +34,6 @@ document.addEventListener('DOMContentLoaded', function initLineGraph() {
 
         countryData = d3.group(data, d => d.country);
 
-        var select = d3.select("#countrySelect");
-
-        select.selectAll("option")
-            .data(Array.from(countryData.keys()))
-            .enter()
-            .append("option")
-            .text(d => d);
-
-        select.on("change", function(event) {
-            var selectedCountry = event.target.value;
-            updateGraph(selectedCountry);
-        });
-
         // Initialize with the first country
         var initialCountry = Array.from(countryData.keys())[0];
         updateGraph(initialCountry);
@@ -54,7 +41,8 @@ document.addEventListener('DOMContentLoaded', function initLineGraph() {
         console.error('Error loading or processing data:', error);
     });
 
-    function updateGraph(country) {
+    // Define updateGraph as a global function
+    window.updateGraph = function(country) {
         console.log("Updating graph for:", country);
         var filteredData = countryData.get(country);
 
@@ -73,6 +61,16 @@ document.addEventListener('DOMContentLoaded', function initLineGraph() {
             .y(function(d) { return y(d.percentage); });
 
         svg.selectAll("*").remove();
+
+        // Add the country name text
+        svg.append("text")
+            .attr("class", "country-name")
+            .attr("x", width / 2)
+            .attr("y", -10)
+            .attr("text-anchor", "middle")
+            .attr("font-size", "16px")
+            .attr("font-weight", "bold")
+            .text(country);
 
         svg.append("path")
             .data([filteredData])
@@ -105,3 +103,9 @@ document.addEventListener('DOMContentLoaded', function initLineGraph() {
             .text("% Foreign Doctors");
     }
 });
+
+// Ensure handleCountryClick is accessible and calls updateGraph
+window.handleCountryClick = function(countryName) {
+    console.log("Country clicked:", countryName);
+    updateGraph(countryName); // Call the updateGraph function defined in linegraph.js
+};
