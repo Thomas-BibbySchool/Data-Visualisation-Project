@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function initScatterplot() {
         drawScatterPlot(2018);
 
         // Update the plot when the slider value changes
-        document.getElementById('yearSlider').addEventListener('input', function() {
+        document.getElementById('yearSliderScatter').addEventListener('input', function() {
             var selectedYear = +this.value;
             document.getElementById('yearDisplay').textContent = selectedYear;
             drawScatterPlot(selectedYear);

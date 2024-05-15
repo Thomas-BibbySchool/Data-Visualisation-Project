@@ -6,49 +6,62 @@ document.addEventListener('DOMContentLoaded', function initLineGraph() {
     var width = svgWidth - margin.left - margin.right;
     var height = svgHeight - margin.top - margin.bottom;
 
-    // Create SVG and append it to #linegraph
     var svg = d3.select("#linegraph").append("svg")
         .attr("width", svgWidth)
         .attr("height", svgHeight)
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    // Parse the date / year
     var parseYear = d3.timeParse("%Y");
 
-    // Load and process data
-    d3.csv("./data/linegraph_dataset.csv", function(d) {
-        return {
-            country: d.Country,
-            year: parseYear(d.Year),
-            percentage: +d["Foreign_%_Value"]
-        };
-    }).then(function(data) {
-        console.log("Data loaded:", data); // Check the structure and completeness of data
+    var data, countryData;
 
-        if (!data.length) {
-            console.error("No data loaded. Check CSV path and format.");
-            return;
-        }
+    d3.csv("./data/linegraph_dataset2.csv").then(function(loadedData) {
+        console.log("Data loaded:", loadedData);
 
-        // Filter data for one country, e.g., Australia
-        var filteredData = data.filter(d => d.country === 'Australia');
-        console.log("Filtered data:", filteredData); // Check what the filtered data looks like
+        data = loadedData.map(function(d) {
+            return {
+                country: d.country,
+                year: parseYear(d.year),
+                percentage: +d.value
+            };
+        });
 
-        // Set the ranges
-        var x = d3.scaleTime().range([0, width]);
-        var y = d3.scaleLinear().range([height, 0]);
+        countryData = d3.group(data, d => d.country);
 
-        // Define the line
+        var select = d3.select("#countrySelect");
+
+        select.selectAll("option")
+            .data(Array.from(countryData.keys()))
+            .enter()
+            .append("option")
+            .text(d => d);
+
+        select.on("change", function(event) {
+            var selectedCountry = event.target.value;
+            updateGraph(selectedCountry);
+        });
+
+        // Initialize with the first country
+        var initialCountry = Array.from(countryData.keys())[0];
+        updateGraph(initialCountry);
+    }).catch(function(error) {
+        console.error('Error loading or processing data:', error);
+    });
+
+    function updateGraph(country) {
+        console.log("Updating graph for:", country);
+        var filteredData = countryData.get(country);
+
+        x.domain(d3.extent(filteredData, function(d) { return d.year; }));
+        y.domain([0, d3.max(filteredData, function(d) { return d.percentage; })]);
+
         var valueline = d3.line()
             .x(function(d) { return x(d.year); })
             .y(function(d) { return y(d.percentage); });
 
-        // Scale the range of the data
-        x.domain(d3.extent(filteredData, function(d) { return d.year; }));
-        y.domain([0, d3.max(filteredData, function(d) { return d.percentage; })]);
+        svg.selectAll("*").remove();
 
-        // Add the valueline path.
         svg.append("path")
             .data([filteredData])
             .attr("class", "line")
@@ -57,16 +70,13 @@ document.addEventListener('DOMContentLoaded', function initLineGraph() {
             .attr("stroke", "steelblue")
             .attr("stroke-width", "2px");
 
-        // Add the X Axis
         svg.append("g")
             .attr("transform", "translate(0," + height + ")")
             .call(d3.axisBottom(x).tickFormat(d3.timeFormat("%Y")));
 
-        // Add the Y Axis
         svg.append("g")
             .call(d3.axisLeft(y));
 
-        // Add X Axis label
         svg.append("text")
             .attr("class", "x axis-label")
             .attr("text-anchor", "middle")
@@ -74,7 +84,6 @@ document.addEventListener('DOMContentLoaded', function initLineGraph() {
             .attr("y", height + margin.bottom - 10)
             .text("Years");
 
-        // Add Y Axis label
         svg.append("text")
             .attr("class", "y axis-label")
             .attr("text-anchor", "middle")
@@ -82,7 +91,5 @@ document.addEventListener('DOMContentLoaded', function initLineGraph() {
             .attr("x", -height / 2)
             .attr("y", -margin.left + 20)
             .text("% Foreign Doctors");
-    }).catch(function(error) {
-        console.error('Error loading or processing data:', error);
-    });
+    }
 });
