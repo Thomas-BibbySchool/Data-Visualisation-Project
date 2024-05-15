@@ -14,18 +14,23 @@ document.addEventListener('DOMContentLoaded', function initLineGraph() {
 
     var parseYear = d3.timeParse("%Y");
 
+    var x = d3.scaleTime().range([0, width]);
+    var y = d3.scaleLinear().range([height, 0]);
+
     var data, countryData;
 
     d3.csv("./data/linegraph_dataset2.csv").then(function(loadedData) {
         console.log("Data loaded:", loadedData);
 
-        data = loadedData.map(function(d) {
-            return {
-                country: d.country,
-                year: parseYear(d.year),
-                percentage: +d.value
-            };
+        data = [];
+        loadedData.forEach(function(d) {
+            data.push({ country: d.country, year: parseYear("2018"), percentage: +d.value_2018 });
+            data.push({ country: d.country, year: parseYear("2019"), percentage: +d.value_2019 });
+            data.push({ country: d.country, year: parseYear("2020"), percentage: +d.value_2020 });
+            data.push({ country: d.country, year: parseYear("2021"), percentage: +d.value_2021 });
         });
+
+        console.log("Transformed Data:", data);
 
         countryData = d3.group(data, d => d.country);
 
@@ -52,6 +57,13 @@ document.addEventListener('DOMContentLoaded', function initLineGraph() {
     function updateGraph(country) {
         console.log("Updating graph for:", country);
         var filteredData = countryData.get(country);
+
+        if (!filteredData) {
+            console.error("No data for country:", country);
+            return;
+        }
+
+        console.log("Filtered Data:", filteredData);
 
         x.domain(d3.extent(filteredData, function(d) { return d.year; }));
         y.domain([0, d3.max(filteredData, function(d) { return d.percentage; })]);
