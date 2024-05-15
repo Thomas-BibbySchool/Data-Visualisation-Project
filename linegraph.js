@@ -104,8 +104,8 @@ document.addEventListener('DOMContentLoaded', function initLineGraph() {
     }
 });
 
-// Ensure handleCountryClick is accessible and calls updateGraph
+// We need to ensure handleCountryClick is accessible and calls updateGraph
 window.handleCountryClick = function(countryName) {
     console.log("Country clicked:", countryName);
-    updateGraph(countryName); // Call the updateGraph function defined in linegraph.js
+    updateGraph(countryName); // We call the updateGraph function defined in linegraph.js
 };
