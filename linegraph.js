@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function initLineGraph() {
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    var x = d3.scaleBand().range([0, width]).padding(0.1);
+    var x = d3.scaleLinear().domain([2018, 2021]).range([0, width]);
     var y = d3.scaleLinear().range([height, 0]);
 
     var data, countryData;
@@ -22,10 +22,10 @@ document.addEventListener('DOMContentLoaded', function initLineGraph() {
 
         data = [];
         loadedData.forEach(function(d) {
-            data.push({ country: d.country, year: "2018", percentage: +d.value_2018 });
-            data.push({ country: d.country, year: "2019", percentage: +d.value_2019 });
-            data.push({ country: d.country, year: "2020", percentage: +d.value_2020 });
-            data.push({ country: d.country, year: "2021", percentage: +d.value_2021 });
+            data.push({ country: d.country, year: 2018, percentage: +d.value_2018 });
+            data.push({ country: d.country, year: 2019, percentage: +d.value_2019 });
+            data.push({ country: d.country, year: 2020, percentage: +d.value_2020 });
+            data.push({ country: d.country, year: 2021, percentage: +d.value_2021 });
         });
 
         console.log("Transformed Data:", data);
@@ -51,11 +51,10 @@ document.addEventListener('DOMContentLoaded', function initLineGraph() {
 
         console.log("Filtered Data:", filteredData);
 
-        x.domain(filteredData.map(function(d) { return d.year; }));
         y.domain([0, d3.max(filteredData, function(d) { return d.percentage; })]);
 
         var valueline = d3.line()
-            .x(function(d) { return x(d.year) + x.bandwidth() / 2; })
+            .x(function(d) { return x(d.year); })
             .y(function(d) { return y(d.percentage); });
 
         svg.selectAll("*").remove();
@@ -80,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function initLineGraph() {
 
         svg.append("g")
             .attr("transform", "translate(0," + height + ")")
-            .call(d3.axisBottom(x));
+            .call(d3.axisBottom(x).tickFormat(d3.format("d")).tickValues([2018, 2019, 2020, 2021]));
 
         svg.append("g")
             .call(d3.axisLeft(y));
