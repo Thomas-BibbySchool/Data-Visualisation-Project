@@ -12,9 +12,7 @@ document.addEventListener('DOMContentLoaded', function initLineGraph() {
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    var parseYear = d3.timeParse("%Y");
-
-    var x = d3.scaleTime().range([0, width]);
+    var x = d3.scaleBand().range([0, width]).padding(0.1);
     var y = d3.scaleLinear().range([height, 0]);
 
     var data, countryData;
@@ -24,10 +22,10 @@ document.addEventListener('DOMContentLoaded', function initLineGraph() {
 
         data = [];
         loadedData.forEach(function(d) {
-            data.push({ country: d.country, year: parseYear("2018"), percentage: +d.value_2018 });
-            data.push({ country: d.country, year: parseYear("2019"), percentage: +d.value_2019 });
-            data.push({ country: d.country, year: parseYear("2020"), percentage: +d.value_2020 });
-            data.push({ country: d.country, year: parseYear("2021"), percentage: +d.value_2021 });
+            data.push({ country: d.country, year: "2018", percentage: +d.value_2018 });
+            data.push({ country: d.country, year: "2019", percentage: +d.value_2019 });
+            data.push({ country: d.country, year: "2020", percentage: +d.value_2020 });
+            data.push({ country: d.country, year: "2021", percentage: +d.value_2021 });
         });
 
         console.log("Transformed Data:", data);
@@ -53,11 +51,11 @@ document.addEventListener('DOMContentLoaded', function initLineGraph() {
 
         console.log("Filtered Data:", filteredData);
 
-        x.domain(d3.extent(filteredData, function(d) { return d.year; }));
+        x.domain(filteredData.map(function(d) { return d.year; }));
         y.domain([0, d3.max(filteredData, function(d) { return d.percentage; })]);
 
         var valueline = d3.line()
-            .x(function(d) { return x(d.year); })
+            .x(function(d) { return x(d.year) + x.bandwidth() / 2; })
             .y(function(d) { return y(d.percentage); });
 
         svg.selectAll("*").remove();
@@ -82,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function initLineGraph() {
 
         svg.append("g")
             .attr("transform", "translate(0," + height + ")")
-            .call(d3.axisBottom(x).tickFormat(d3.timeFormat("%Y")));
+            .call(d3.axisBottom(x));
 
         svg.append("g")
             .call(d3.axisLeft(y));

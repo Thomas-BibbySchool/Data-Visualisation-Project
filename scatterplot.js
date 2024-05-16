@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function initScatterplot() {
-    var w = 550;
-    var h = 300;
+    var w = 850;
+    var h = 500;
     var paddingXScale = 60;
     var paddingYScale = 60;
 
@@ -119,9 +119,17 @@ document.addEventListener('DOMContentLoaded', function initScatterplot() {
             svg.append("text")
                 .attr("text-anchor", "end")
                 .attr("transform", "rotate(-90)")
-                .attr("y", 20)
+                .attr("y", 10)
                 .attr("x", -h / 2 + paddingYScale)
                 .text("Healthcare Performance");
+
+            svg.append("text")
+                .attr("text-anchor", "end")
+                .attr("transform", "rotate(-90)")
+                .attr("y", 30)
+                .attr("x", -h / 2 + paddingYScale + 50)
+                .text("(% of all patients waiting more than 3 months)");
+                // .style("font-style", "italic");
         }
 
         // Initial plot
