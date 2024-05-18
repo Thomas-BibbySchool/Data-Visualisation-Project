@@ -36,6 +36,7 @@ body, footer {
     flex: 1;
     margin: 10px;
     height: 600px; /* Ensure both divs have the same height */
+    width: 70%;
 }
 
 #heatmap svg, #linegraph svg {
