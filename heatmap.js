@@ -3,6 +3,9 @@ const colorScale = d3
   .interpolator(d3.interpolateBlues);
 
 let isShowingDoctors = true; // Initial state is showing doctors
+let svg; // Declare svg at a higher scope level
+const width = 800;
+const height = 450;
 
 function toggle() {
   isShowingDoctors = !isShowingDoctors; // Toggle the state
@@ -16,13 +19,10 @@ function handleCountryClick(countryName) {
 function updateHeatmap(year) {
   document.getElementById("yearLabel").textContent = `Year: ${year}`; // Update the label text
 
-  const width = 800;
-  const height = 450;
   const svgContainer = d3.select("#heatmap");
-  let svg = svgContainer.select("svg");
   let g;
 
-  if (svg.empty()) {
+  if (svgContainer.select("svg").empty()) {
     svg = svgContainer
       .append("svg")
       .attr("width", width)
@@ -32,6 +32,7 @@ function updateHeatmap(year) {
 
     g = svg.append("g"); // Create a group for the map paths
   } else {
+    svg = svgContainer.select("svg");
     g = svg.select("g");
   }
 
@@ -146,6 +147,31 @@ function updateLegend(minValue, maxValue) {
     .attr("transform", `translate(0, ${legendHeight})`)
     .call(xAxis)
     .select(".domain").remove(); // Remove axis line
+}
+
+function zoomToNorthAmerica() {
+  svg.transition().duration(750).call(
+    zoom.transform,
+    d3.zoomIdentity.translate(width / 2, height / 2).scale(3).translate(-width / 4, -height / 4)
+  );
+}
+
+function zoomToEurope() {
+  svg.transition().duration(750).call(
+    zoom.transform,
+    d3.zoomIdentity.translate(width / 2.3, height / 0.7).scale(3).translate(-width / 2, -height / 2)
+  );
+}
+
+function zoomToOceanic() {
+  svg.transition().duration(750).call(
+    zoom.transform,
+    d3.zoomIdentity.translate(width / 12, height / 3).scale(3).translate(-width / 1.3, -height / 1.75)
+  );
+}
+
+function resetZoom() {
+  svg.transition().duration(750).call(zoom.transform, d3.zoomIdentity);
 }
 
 window.onload = () => updateHeatmap(2018); // Initialize with 2018 data
