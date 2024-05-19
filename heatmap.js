@@ -1,6 +1,6 @@
 const colorScale = d3
-  .scaleSequential()
-  .interpolator(d3.interpolateBlues);
+    .scaleSequential()
+    .interpolator(d3.interpolateBlues);
 
 let isShowingDoctors = true; // Initial state is showing doctors
 let svg; // Declare svg at a higher scope level
@@ -24,11 +24,11 @@ function updateHeatmap(year) {
 
   if (svgContainer.select("svg").empty()) {
     svg = svgContainer
-      .append("svg")
-      .attr("width", width)
-      .attr("height", height)
-      .attr("viewBox", `0 0 ${width} ${height}`)
-      .call(zoom); // Add zoom behavior to the SVG
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .attr("viewBox", `0 0 ${width} ${height}`)
+        .call(zoom); // Add zoom behavior to the SVG
 
     g = svg.append("g"); // Create a group for the map paths
   } else {
@@ -38,9 +38,9 @@ function updateHeatmap(year) {
 
   const tooltip = d3.select("#tooltip");
   const projection = d3.geoNaturalEarth1()
-    .center([0, 0])
-    .scale(width / 1.6 / Math.PI)
-    .translate([width / 2, height / 2]);
+      .center([0, 0])
+      .scale(width / 1.6 / Math.PI)
+      .translate([width / 2, height / 2]);
   const path = d3.geoPath().projection(projection);
 
   const dataFile = `./data/${year}_country_${isShowingDoctors ? "per_doctors" : "gdp_per_capita"}.csv`;
@@ -61,30 +61,30 @@ function updateHeatmap(year) {
 
       const paths = g.selectAll("path").data(world.features);
       paths
-        .enter()
-        .append("path")
-        .merge(paths)
-        .attr("d", path)
-        .style("fill", d =>
-          d.properties.value !== undefined
-            ? colorScale(d.properties.value)
-            : "#808080" // Default color for missing or zero values
-        )
-        .style("stroke", "#fff")
-        .on("mouseover", function (event, d) {
-          tooltip
-            .style("visibility", "visible")
-            .style("opacity", 1)
-            .html(d.properties.name + "<br/>" + (d.properties.value || "No data"))
-            .style("left", (event.pageX + 10) + "px")
-            .style("top", (event.pageY - 28) + "px");
-        })
-        .on("mouseout", function () {
-          tooltip.style("visibility", "hidden").style("opacity", 0);
-        })
-        .on("click", function (event, d) {
-          handleCountryClick(d.properties.name);
-        });
+          .enter()
+          .append("path")
+          .merge(paths)
+          .attr("d", path)
+          .style("fill", d =>
+              d.properties.value !== undefined
+                  ? colorScale(d.properties.value)
+                  : "#808080" // Default color for missing or zero values
+          )
+          .style("stroke", "#fff")
+          .on("mouseover", function (event, d) {
+            tooltip
+                .style("visibility", "visible")
+                .style("opacity", 1)
+                .html(d.properties.name + "<br/>" + (d.properties.value || "No data"))
+                .style("left", (event.pageX + 10) + "px")
+                .style("top", (event.pageY - 28) + "px");
+          })
+          .on("mouseout", function () {
+            tooltip.style("visibility", "hidden").style("opacity", 0);
+          })
+          .on("click", function (event, d) {
+            handleCountryClick(d.properties.name);
+          });
       paths.exit().remove();
 
       // Update legend
@@ -94,8 +94,8 @@ function updateHeatmap(year) {
 }
 
 const zoom = d3.zoom()
-  .scaleExtent([1, 8]) // Set the zoom scale extent
-  .on("zoom", zoomed);
+    .scaleExtent([1, 8]) // Set the zoom scale extent
+    .on("zoom", zoomed);
 
 function zoomed(event) {
   const { transform } = event;
@@ -113,40 +113,40 @@ function updateLegend(minValue, maxValue) {
   // Create gradient
   const defs = svg.append("defs");
   const linearGradient = defs.append("linearGradient")
-    .attr("id", "linear-gradient");
+      .attr("id", "linear-gradient");
 
   linearGradient.selectAll("stop")
-    .data([
-      { offset: "0%", color: colorScale(minValue) },
-      { offset: "100%", color: colorScale(maxValue) }
-    ])
-    .enter().append("stop")
-    .attr("offset", d => d.offset)
-    .attr("stop-color", d => d.color);
+      .data([
+        { offset: "0%", color: colorScale(minValue) },
+        { offset: "100%", color: colorScale(maxValue) }
+      ])
+      .enter().append("stop")
+      .attr("offset", d => d.offset)
+      .attr("stop-color", d => d.color);
 
   // Draw the rectangle and fill with gradient
   svg.append("rect")
-    .attr("x", 0)
-    .attr("y", 0)
-    .attr("width", legendWidth)
-    .attr("height", legendHeight)
-    .style("fill", "url(#linear-gradient)");
+      .attr("x", 0)
+      .attr("y", 0)
+      .attr("width", legendWidth)
+      .attr("height", legendHeight)
+      .style("fill", "url(#linear-gradient)");
 
   // Create a scale for the legend
   const xScale = d3.scaleLinear()
-    .domain([minValue, maxValue])
-    .range([0, legendWidth]);
+      .domain([minValue, maxValue])
+      .range([0, legendWidth]);
 
   // Create and position the legend axis
   const xAxis = d3.axisBottom(xScale)
-    .ticks(5)
-    .tickSize(-legendHeight);
+      .ticks(5)
+      .tickSize(-legendHeight);
 
   svg.append("g")
-    .attr("class", "legend axis")
-    .attr("transform", `translate(0, ${legendHeight})`)
-    .call(xAxis)
-    .select(".domain").remove(); // Remove axis line
+      .attr("class", "legend axis")
+      .attr("transform", `translate(0, ${legendHeight})`)
+      .call(xAxis)
+      .select(".domain").remove(); // Remove axis line
 }
 
 function zoomToNorthAmerica() {

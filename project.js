@@ -1,3 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-    initScatterplot();
-});
+// document.addEventListener("DOMContentLoaded", function() {
+//     initScatterplot();
+// });
