@@ -1,3 +1,14 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 body, footer {
     text-align: center;
 }
@@ -5,16 +16,17 @@ body, footer {
 .content {
     max-width: 850px;
     margin: auto;
+    flex: 1; 
 }
 
 #graph {
     width: 100%;
-    height: 300px; 
+    height: 300px;
     background-color: #f4f4f4;
 }
 
 .heatmap-container {
-    border: 2px solid #000; 
+    border: 2px solid #000;
 }
 
 #legendContainer {
@@ -27,11 +39,10 @@ body, footer {
     padding: 5px 10px;
     border-radius: 5px;
     text-align: center;
-  }
-  
+}
 
 button {
-    background-color: #4586a0; /* Green */
+    background-color: #4586a0;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -49,7 +60,19 @@ button:hover {
     background-color: #4586a091;
 }
 
-
 .linegraph-container {
     margin-top: 20px;
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    font-size: 14px;
+    color: #333;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
 }
