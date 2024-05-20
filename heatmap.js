@@ -35,6 +35,7 @@ function toggle() {
   datasetsLoaded = 0;
   minValue = Number.POSITIVE_INFINITY;
   maxValue = Number.NEGATIVE_INFINITY;
+  updateHeatmapTitle(); // Update title
   calculateGlobalMinMax();
 }
 
@@ -101,8 +102,18 @@ function updateHeatmap(year) {
       paths.exit().remove();
 
       updateLegend(minValue, maxValue);
+      updateHeatmapTitle(); // Update title
     });
   });
+}
+
+function updateHeatmapTitle() {
+  const titleElement = document.getElementById("heatmap-title");
+  if (isShowingDoctors) {
+    titleElement.textContent = "Percentage of foreign-trained doctors";
+  } else {
+    titleElement.textContent = "GDP per capita";
+  }
 }
 
 const zoom = d3.zoom()
