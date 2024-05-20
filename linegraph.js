@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function initLineGraph() {
-    console.log("Initializing line graph...");
 
     var svgWidth = 600, svgHeight = 300;
     var margin = { top: 20, right: 20, bottom: 50, left: 70 };
@@ -18,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function initLineGraph() {
     var data, countryData;
 
     d3.csv("./data/linegraph_dataset4.csv").then(function(loadedData) {
-        console.log("Data loaded:", loadedData);
 
         // Transform the data
         data = loadedData.map(function(d) {
@@ -28,8 +26,6 @@ document.addEventListener('DOMContentLoaded', function initLineGraph() {
                 percentage: +d.Value
             };
         });
-
-        console.log("Transformed Data:", data);
 
         countryData = d3.group(data, d => d.country);
 
@@ -42,15 +38,12 @@ document.addEventListener('DOMContentLoaded', function initLineGraph() {
 
     // Define updateGraph as a global function
     window.updateGraph = function(country) {
-        console.log("Updating graph for:", country);
         var filteredData = countryData.get(country);
 
         if (!filteredData) {
             console.error("No data for country:", country);
             return;
         }
-
-        console.log("Filtered Data:", filteredData);
 
         // Update x and y domains based on the filtered data
         x.domain(d3.extent(filteredData, function(d) { return d.year; }));
@@ -106,6 +99,5 @@ document.addEventListener('DOMContentLoaded', function initLineGraph() {
 
 // We need to ensure handleCountryClick is accessible and calls updateGraph
 window.handleCountryClick = function(countryName) {
-    console.log("Country clicked:", countryName);
     updateGraph(countryName); // We call the updateGraph function defined in linegraph.js
 };
