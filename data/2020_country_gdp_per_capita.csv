@@ -1,46 +1,179 @@
 country,value
-Australia,81091.2
-Austria,42732.8
-Belgium,39851.2
-Canada,58092.6
-Czechia,25000.0
-Denmark,60000.0
-Finland,43048.4
-France,34193.2
-Germany,40949.9
-Greece,15460.5
-Hungary,20000.0
-Iceland,70000.0
-Ireland,74785.9
-Italy,27945.0
-Japan,40000.0
-Korea,35000.0
-Luxembourg,102758.6
-Mexico,18334.4
-Netherlands,45668.7
-New Zealand,64346.2
-Norway,75000.0
-Poland,61681.5
-Portugal,19473.4
-Slovak Republic,17117.6
-Spain,23603.4
-Sweden,55000.0
-Switzerland,80417.7
-Türkiye,60541.3
-United Kingdom,31448.3
-United States,63530.6
-Brazil,35935.7
-Chile,15000.0
-China (People's Republic of),12000.0
-Estonia,20657.8
-India,14200.8
-Israel,40000.0
-Russia,12000.0
-Slovenia,22365.0
-South Africa,6000.0
-Latvia,15940.5
-Lithuania,17828.7
-Costa Rica,12000.0
-Bulgaria,17385.8
-Croatia,12465.5
-Romania,55373.3
+Afghanistan,1928.4547
+Albania,11372.541
+Algeria,13086.293
+Angola,6279.929
+Argentina,15975.839
+Armenia,11546.176
+Australia,48268.945
+Austria,40503.04
+Azerbaijan,16189.511
+Bahrain,36890.504
+Bangladesh,4418.9644
+Barbados,10487.387
+Belarus,19053.156
+Belgium,38763.44
+Benin,2297.7698
+Bolivia,6062.065
+Bosnia and Herzegovina,10736.168
+Botswana,14162.686
+Brazil,13685.926
+Bulgaria,18203.832
+Burkina Faso,1638.8279
+Burundi,720.446
+Cambodia,3728.1985
+Cameroon,2769.2869
+Canada,42493.63
+Cape Verde,5831.9985
+Central African Republic,613.78937
+Chad,1463.5312
+Chile,20205.87
+China,17225.969
+Colombia,12377.135
+Comoros,1869.9441
+Congo,4203.1104
+Costa Rica,13996.39
+Cote d'Ivoire,3682.1353
+Croatia,21672.479
+Cuba,7364.1055
+Cyprus,28634.457
+Czechia,30365.37
+Czechoslovakia,29043.441
+Democratic Republic of Congo,794.2714
+Denmark,47171.086
+Djibouti,3426.696
+Dominica,7974.3066
+Dominican Republic,15325.654
+East Asia (MPD),19749.514
+Eastern Europe (MPD),19578.574
+Ecuador,9646.065
+Egypt,12234.504
+El Salvador,8137.9746
+Equatorial Guinea,23300.297
+Estonia,28261.582
+Eswatini,8167.6895
+Ethiopia,2121.8591
+Finland,38871.703
+Former Sudan,2586.8955
+France,35913.82
+Gabon,15745.749
+Gambia,1914.1969
+Georgia,11770.782
+Germany,44996.43
+Ghana,4069.252
+Greece,21767.22
+Guatemala,7309.368
+Guinea,1726.5083
+Guinea-Bissau,1531.3096
+Haiti,1641.7617
+Honduras,4567.8857
+Hong Kong,46550.258
+Hungary,26091.4
+Iceland,39368.4
+India,6730.547
+Indonesia,11895.075
+Iran,17296.264
+Iraq,11717.375
+Ireland,55134.855
+Israel,32730.943
+Italy,32385.326
+Jamaica,6880.4883
+Japan,36826.64
+Jordan,8896.383
+Kazakhstan,25124.486
+Kenya,3129.5852
+Kuwait,66365.99
+Kyrgyzstan,4899.061
+Laos,6824.144
+Latin America (MPD),12865.496
+Latvia,25453.064
+Lebanon,10182.637
+Lesotho,2297.383
+Liberia,768.40546
+Libya,11741.864
+Lithuania,28971.844
+Luxembourg,53489.332
+Madagascar,1300.5428
+Malawi,1186.6827
+Malaysia,24279.316
+Mali,1638.9304
+Malta,29703.762
+Mauritania,3532.2979
+Mauritius,18445.975
+Mexico,15253.691
+Middle East and North Africa (MPD),18227.408
+Moldova,6560.7476
+Mongolia,12990.328
+Montenegro,17355.623
+Morocco,7849.208
+Mozambique,1076.6941
+Myanmar,6282.8115
+Namibia,7734.6055
+Nepal,2832.8608
+Netherlands,46014.484
+New Zealand,35853.69
+Nicaragua,4575.1865
+Niger,962.7823
+Nigeria,4976.3223
+North Korea,1584.3771
+North Macedonia,13125.83
+Norway,83543.1
+Oman,46133.21
+Pakistan,5242.6953
+Palestine,4490.755
+Panama,18840.738
+Paraguay,8603.079
+Peru,11136.991
+Philippines,7624.4136
+Poland,28577.14
+Portugal,25700.283
+Puerto Rico,33787.4
+Qatar,143118.53
+Romania,24799.71
+Russia,24625.385
+Rwanda,1935.2662
+Saint Lucia,8164.9062
+Sao Tome and Principe,3826.3755
+Saudi Arabia,46723.93
+Senegal,2524.2656
+Serbia,15256.421
+Seychelles,29647.482
+Sierra Leone,1635.713
+Singapore,71964.7
+Slovakia,26468.295
+Slovenia,28733.303
+South Africa,10839.133
+South Korea,38606.984
+South and South East Asia (MPD),7590.1543
+Spain,30834.514
+Sri Lanka,11447.249
+Sub Saharan Africa (MPD),3335.987
+Sweden,44128.332
+Switzerland,60521.26
+Syria,2903.7397
+Taiwan,48779.438
+Tajikistan,4828.3936
+Tanzania,2948.4724
+Thailand,15815.915
+Togo,1482.7515
+Trinidad and Tobago,25548.51
+Tunisia,10354.239
+Turkey,23721.88
+Turkmenistan,16580.84
+USSR,18851.242
+Uganda,2032.2618
+Ukraine,9769.828
+United Arab Emirates,70188.27
+United Kingdom,34651.184
+United States of America,54379.207
+Uruguay,18460.04
+Uzbekistan,11341.919
+Venezuela,4952.53
+Vietnam,7395.3613
+Western Europe (MPD),38162.535
+Western offshoots (MPD),52617.65
+World,15461.187
+Yemen,2031.4436
+Yugoslavia,16757.94
+Zambia,3270.599
+Zimbabwe,1585.9728
