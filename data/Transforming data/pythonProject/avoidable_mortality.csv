@@ -1,0 +1,120 @@
+VAR,Variable,Measure,COU,Country,Year,Health_Performance_Value
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,ARG,Argentina,2018,100853
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,ARG,Argentina,2019,99429
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,ARG,Argentina,2020,119235
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,AUS,Australia,2018,36982
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,AUS,Australia,2019,38993
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,AUS,Australia,2020,36702
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,AUS,Australia,2021,37405
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,AUT,Austria,2018,17832
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,AUT,Austria,2019,17547
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,AUT,Austria,2020,18707
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,AUT,Austria,2021,19884
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,BEL,Belgium,2018,21861
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,BRA,Brazil,2018,571660
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,BRA,Brazil,2019,570350
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,BRA,Brazil,2020,690152
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,BGR,Bulgaria,2018,29606
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,BGR,Bulgaria,2019,30132
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,BGR,Bulgaria,2020,38191
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,CAN,Canada,2018,70388
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,CAN,Canada,2019,70539
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,CHL,Chile,2018,33182
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,CHL,Chile,2019,34509
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,CHL,Chile,2020,42726
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,COL,Colombia,2018,99098
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,COL,Colombia,2019,99977
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,COL,Colombia,2020,131982
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,CRI,Costa Rica,2018,9103
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,CRI,Costa Rica,2019,9441
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,CRI,Costa Rica,2020,10227
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,HRV,Croatia,2019,14290
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,HRV,Croatia,2020,15996
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,CZE,Czechia,2018,32994
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,CZE,Czechia,2019,32055
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,CZE,Czechia,2020,35627
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,CZE,Czechia,2021,42826
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,DNK,Denmark,2018,11989
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,DNK,Denmark,2019,11967
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,DNK,Denmark,2020,11522
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,EST,Estonia,2018,4532
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,EST,Estonia,2019,4296
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,EST,Estonia,2020,4565
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,EST,Estonia,2021,5435
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,FIN,Finland,2018,12392
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,FIN,Finland,2019,12151
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,FIN,Finland,2020,12472
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,DEU,Germany,2018,183116
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,DEU,Germany,2019,177503
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,DEU,Germany,2020,186511
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,GRC,Greece,2018,23432
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,GRC,Greece,2019,23857
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,GRC,Greece,2020,25157
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,HUN,Hungary,2018,46914
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,HUN,Hungary,2019,45856
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,ISL,Iceland,2018,494
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,ISL,Iceland,2019,466
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,ISL,Iceland,2020,463
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,ISL,Iceland,2021,512
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,IRL,Ireland,2018,7801
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,ISR,Israel,2018,9408
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,ISR,Israel,2019,9671
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,ISR,Israel,2020,10468
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,ITA,Italy,2018,99706
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,ITA,Italy,2019,98149
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,JPN,Japan,2018,221329
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,JPN,Japan,2019,215647
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,JPN,Japan,2020,213333
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,KOR,Korea,2018,82762
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,KOR,Korea,2019,81555
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,KOR,Korea,2020,81374
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,LVA,Latvia,2018,9174
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,LVA,Latvia,2019,8556
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,LVA,Latvia,2020,8891
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,LVA,Latvia,2021,11517
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,LTU,Lithuania,2018,12232
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,LTU,Lithuania,2019,12071
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,LTU,Lithuania,2020,14129
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,LTU,Lithuania,2021,15642
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,LUX,Luxembourg,2018,895
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,LUX,Luxembourg,2019,854
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,LUX,Luxembourg,2020,939
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,LUX,Luxembourg,2021,919
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,MEX,Mexico,2018,343141
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,MEX,Mexico,2019,354627
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,MEX,Mexico,2020,596499
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,NLD,Netherlands,2018,31209
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,NLD,Netherlands,2019,30297
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,NLD,Netherlands,2020,33463
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,PER,Peru,2018,48388
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,PER,Peru,2019,50286
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,PER,Peru,2020,115827
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,POL,Poland,2018,122685
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,POL,Poland,2019,124735
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,POL,Poland,2020,151269
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,PRT,Portugal,2018,22014
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,PRT,Portugal,2019,21615
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,ROU,Romania,2018,91905
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,ROU,Romania,2019,90737
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,SVK,Slovak Republic,2018,19385
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,SVK,Slovak Republic,2019,19100
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,SVN,Slovenia,2018,4912
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,SVN,Slovenia,2019,4843
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,SVN,Slovenia,2020,5483
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,ZAF,South Africa,2018,238074
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,ESP,Spain,2018,75687
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,ESP,Spain,2019,74599
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,ESP,Spain,2020,89186
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,ESP,Spain,2021,85964
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,SWE,Sweden,2018,17040
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,CHE,Switzerland,2018,11906
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,CHE,Switzerland,2019,11578
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,CHE,Switzerland,2020,12533
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,TUR,Türkiye,2018,148993
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,TUR,Türkiye,2019,143142
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,GBR,United Kingdom,2018,139499
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,GBR,United Kingdom,2019,137442
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,GBR,United Kingdom,2020,158761
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,USA,United States,2018,917832
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,USA,United States,2019,920265
+AVDMAVOI,Avoidable mortality (preventable+treatable),Number of total deaths,USA,United States,2020,1149811

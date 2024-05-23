@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function initScatterplot() {
     var paddingYScale = 60;
 
     // Load CSV data directly
-    d3.csv("./data/scatterplot_datatset2.csv").then(function(data) {
+    d3.csv("./data/scatterplot_datatset3.csv").then(function(data) {
         if (!data.length) {
             console.error("Data is empty or not loaded correctly");
             return;
@@ -121,15 +121,15 @@ document.addEventListener('DOMContentLoaded', function initScatterplot() {
                 .attr("transform", "rotate(-90)")
                 .attr("y", 10)
                 .attr("x", -h / 2 + paddingYScale)
-                .text("Healthcare Performance");
+                .text("Avoidable Mortality");
 
-            svg.append("text")
-                .attr("text-anchor", "end")
-                .attr("transform", "rotate(-90)")
-                .attr("y", 30)
-                .attr("x", -h / 2 + paddingYScale + 50)
-                .text("(% of all patients waiting more than 3 months)");
-                // .style("font-style", "italic");
+            // svg.append("text")
+            //     .attr("text-anchor", "end")
+            //     .attr("transform", "rotate(-90)")
+            //     .attr("y", 30)
+            //     .attr("x", -h / 2 + paddingYScale + 50)
+            //     .text("(% of all patients waiting more than 3 months)");
+            //     // .style("font-style", "italic");
         }
 
         // Initial plot

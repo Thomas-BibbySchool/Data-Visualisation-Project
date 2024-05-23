@@ -1,0 +1,464 @@
+COU,Country,Year,Variable_avoidable,Health_Performance_Value,Variable_foreign,Foreign_%_Value
+AUS,Australia,2007,,,% of foreign-trained doctors,23.635
+AUS,Australia,2008,,,% of foreign-trained doctors,23.937
+AUS,Australia,2009,,,% of foreign-trained doctors,25.823
+AUS,Australia,2012,,,% of foreign-trained doctors,33.076
+AUS,Australia,2013,,,% of foreign-trained doctors,29.701
+AUS,Australia,2014,,,% of foreign-trained doctors,31.734
+AUS,Australia,2015,,,% of foreign-trained doctors,32.349
+AUS,Australia,2016,,,% of foreign-trained doctors,32.678
+AUS,Australia,2017,,,% of foreign-trained doctors,32.074
+AUS,Australia,2018,Avoidable mortality (preventable+treatable),36982.0,% of foreign-trained doctors,32.46
+AUS,Australia,2019,Avoidable mortality (preventable+treatable),38993.0,% of foreign-trained doctors,32.543
+AUS,Australia,2020,Avoidable mortality (preventable+treatable),36702.0,% of foreign-trained doctors,32.3
+AUS,Australia,2021,Avoidable mortality (preventable+treatable),37405.0,% of foreign-trained doctors,32.19
+AUT,Austria,2005,,,% of foreign-trained doctors,2.94
+AUT,Austria,2006,,,% of foreign-trained doctors,3.04
+AUT,Austria,2007,,,% of foreign-trained doctors,3.48
+AUT,Austria,2008,,,% of foreign-trained doctors,3.5
+AUT,Austria,2009,,,% of foreign-trained doctors,3.64
+AUT,Austria,2010,,,% of foreign-trained doctors,3.9
+AUT,Austria,2011,,,% of foreign-trained doctors,4.08
+AUT,Austria,2012,,,% of foreign-trained doctors,4.35
+AUT,Austria,2013,,,% of foreign-trained doctors,4.57
+AUT,Austria,2014,,,% of foreign-trained doctors,5.06
+AUT,Austria,2015,,,% of foreign-trained doctors,5.14
+AUT,Austria,2016,,,% of foreign-trained doctors,5.47
+AUT,Austria,2017,,,% of foreign-trained doctors,5.77
+AUT,Austria,2018,Avoidable mortality (preventable+treatable),17832.0,% of foreign-trained doctors,5.97
+AUT,Austria,2019,Avoidable mortality (preventable+treatable),17547.0,% of foreign-trained doctors,6.37
+AUT,Austria,2020,Avoidable mortality (preventable+treatable),18707.0,% of foreign-trained doctors,6.54
+AUT,Austria,2021,Avoidable mortality (preventable+treatable),19884.0,% of foreign-trained doctors,6.82
+AUT,Austria,2022,,,% of foreign-trained doctors,7.16
+BEL,Belgium,2000,,,% of foreign-trained doctors,4.36
+BEL,Belgium,2001,,,% of foreign-trained doctors,4.49
+BEL,Belgium,2002,,,% of foreign-trained doctors,4.56
+BEL,Belgium,2003,,,% of foreign-trained doctors,4.65
+BEL,Belgium,2004,,,% of foreign-trained doctors,4.74
+BEL,Belgium,2005,,,% of foreign-trained doctors,4.98
+BEL,Belgium,2006,,,% of foreign-trained doctors,5.3
+BEL,Belgium,2007,,,% of foreign-trained doctors,6.02
+BEL,Belgium,2008,,,% of foreign-trained doctors,6.79
+BEL,Belgium,2009,,,% of foreign-trained doctors,7.43
+BEL,Belgium,2010,,,% of foreign-trained doctors,8.2
+BEL,Belgium,2011,,,% of foreign-trained doctors,9.18
+BEL,Belgium,2012,,,% of foreign-trained doctors,10.13
+BEL,Belgium,2013,,,% of foreign-trained doctors,10.73
+BEL,Belgium,2014,,,% of foreign-trained doctors,11.4
+BEL,Belgium,2015,,,% of foreign-trained doctors,11.46
+BEL,Belgium,2016,,,% of foreign-trained doctors,11.91
+BEL,Belgium,2017,,,% of foreign-trained doctors,12.26
+BEL,Belgium,2018,Avoidable mortality (preventable+treatable),21861.0,% of foreign-trained doctors,12.11
+BEL,Belgium,2019,,,% of foreign-trained doctors,12.42
+BEL,Belgium,2020,,,% of foreign-trained doctors,12.7
+BEL,Belgium,2021,,,% of foreign-trained doctors,13.22
+BEL,Belgium,2022,,,% of foreign-trained doctors,13.51
+CAN,Canada,2000,,,% of foreign-trained doctors,21.27
+CAN,Canada,2001,,,% of foreign-trained doctors,21.26
+CAN,Canada,2002,,,% of foreign-trained doctors,21.406
+CAN,Canada,2003,,,% of foreign-trained doctors,21.315
+CAN,Canada,2004,,,% of foreign-trained doctors,21.343
+CAN,Canada,2005,,,% of foreign-trained doctors,21.534
+CAN,Canada,2006,,,% of foreign-trained doctors,21.562
+CAN,Canada,2007,,,% of foreign-trained doctors,21.976
+CAN,Canada,2008,,,% of foreign-trained doctors,22.478
+CAN,Canada,2009,,,% of foreign-trained doctors,22.988
+CAN,Canada,2010,,,% of foreign-trained doctors,23.197
+CAN,Canada,2011,,,% of foreign-trained doctors,23.619
+CAN,Canada,2012,,,% of foreign-trained doctors,23.811
+CAN,Canada,2013,,,% of foreign-trained doctors,23.922
+CAN,Canada,2014,,,% of foreign-trained doctors,24.092
+CAN,Canada,2015,,,% of foreign-trained doctors,24.097
+CAN,Canada,2016,,,% of foreign-trained doctors,24.311
+CAN,Canada,2017,,,% of foreign-trained doctors,24.701
+CAN,Canada,2018,Avoidable mortality (preventable+treatable),70388.0,% of foreign-trained doctors,24.598
+CAN,Canada,2019,Avoidable mortality (preventable+treatable),70539.0,% of foreign-trained doctors,24.418
+CAN,Canada,2020,,,% of foreign-trained doctors,24.085
+CAN,Canada,2021,,,% of foreign-trained doctors,24.035
+CHE,Switzerland,2008,,,% of foreign-trained doctors,21.843
+CHE,Switzerland,2009,,,% of foreign-trained doctors,23.046
+CHE,Switzerland,2010,,,% of foreign-trained doctors,24.127
+CHE,Switzerland,2011,,,% of foreign-trained doctors,25.31
+CHE,Switzerland,2012,,,% of foreign-trained doctors,27.023
+CHE,Switzerland,2013,,,% of foreign-trained doctors,29.348
+CHE,Switzerland,2014,,,% of foreign-trained doctors,30.505
+CHE,Switzerland,2015,,,% of foreign-trained doctors,31.53
+CHE,Switzerland,2016,,,% of foreign-trained doctors,32.896
+CHE,Switzerland,2017,,,% of foreign-trained doctors,34.065
+CHE,Switzerland,2018,Avoidable mortality (preventable+treatable),11906.0,% of foreign-trained doctors,35.352
+CHE,Switzerland,2019,Avoidable mortality (preventable+treatable),11578.0,% of foreign-trained doctors,36.3
+CHE,Switzerland,2020,Avoidable mortality (preventable+treatable),12533.0,% of foreign-trained doctors,37.36
+CHE,Switzerland,2021,,,% of foreign-trained doctors,38.44
+CHL,Chile,2014,,,% of foreign-trained doctors,15.24
+CHL,Chile,2015,,,% of foreign-trained doctors,16.12
+CHL,Chile,2016,,,% of foreign-trained doctors,17.87
+CHL,Chile,2017,,,% of foreign-trained doctors,21.27
+CHL,Chile,2018,Avoidable mortality (preventable+treatable),33182.0,% of foreign-trained doctors,22.74
+CHL,Chile,2019,Avoidable mortality (preventable+treatable),34509.0,% of foreign-trained doctors,20.82
+CHL,Chile,2020,Avoidable mortality (preventable+treatable),42726.0,% of foreign-trained doctors,22.97
+CHL,Chile,2021,,,% of foreign-trained doctors,23.39
+CHL,Chile,2022,,,% of foreign-trained doctors,24.79
+COL,Colombia,2011,,,% of foreign-trained doctors,4.52
+COL,Colombia,2012,,,% of foreign-trained doctors,4.45
+COL,Colombia,2013,,,% of foreign-trained doctors,4.46
+COL,Colombia,2014,,,% of foreign-trained doctors,4.56
+COL,Colombia,2015,,,% of foreign-trained doctors,4.67
+COL,Colombia,2016,,,% of foreign-trained doctors,4.92
+COL,Colombia,2017,,,% of foreign-trained doctors,5.4
+COL,Colombia,2018,Avoidable mortality (preventable+treatable),99098.0,% of foreign-trained doctors,5.5
+COL,Colombia,2019,Avoidable mortality (preventable+treatable),99977.0,% of foreign-trained doctors,5.42
+COL,Colombia,2020,Avoidable mortality (preventable+treatable),131982.0,% of foreign-trained doctors,5.46
+COL,Colombia,2021,,,% of foreign-trained doctors,5.53
+CZE,Czechia,2000,,,% of foreign-trained doctors,1.32
+CZE,Czechia,2001,,,% of foreign-trained doctors,1.49
+CZE,Czechia,2002,,,% of foreign-trained doctors,1.99
+CZE,Czechia,2003,,,% of foreign-trained doctors,2.79
+CZE,Czechia,2004,,,% of foreign-trained doctors,3.32
+CZE,Czechia,2005,,,% of foreign-trained doctors,3.75
+CZE,Czechia,2006,,,% of foreign-trained doctors,3.96
+CZE,Czechia,2007,,,% of foreign-trained doctors,4.13
+CZE,Czechia,2008,,,% of foreign-trained doctors,4.2
+CZE,Czechia,2009,,,% of foreign-trained doctors,4.29
+CZE,Czechia,2010,,,% of foreign-trained doctors,4.4
+CZE,Czechia,2011,,,% of foreign-trained doctors,4.71
+CZE,Czechia,2012,,,% of foreign-trained doctors,5.09
+CZE,Czechia,2013,,,% of foreign-trained doctors,4.66
+CZE,Czechia,2014,,,% of foreign-trained doctors,4.89
+CZE,Czechia,2015,,,% of foreign-trained doctors,6.1
+CZE,Czechia,2016,,,% of foreign-trained doctors,6.56
+CZE,Czechia,2017,,,% of foreign-trained doctors,7.07
+CZE,Czechia,2018,Avoidable mortality (preventable+treatable),32994.0,% of foreign-trained doctors,7.35
+CZE,Czechia,2019,Avoidable mortality (preventable+treatable),32055.0,% of foreign-trained doctors,7.38
+CZE,Czechia,2020,Avoidable mortality (preventable+treatable),35627.0,% of foreign-trained doctors,7.48
+CZE,Czechia,2021,Avoidable mortality (preventable+treatable),42826.0,% of foreign-trained doctors,7.59
+CZE,Czechia,2022,,,% of foreign-trained doctors,7.89
+DEU,Germany,2000,,,% of foreign-trained doctors,3.721
+DEU,Germany,2001,,,% of foreign-trained doctors,3.968
+DEU,Germany,2002,,,% of foreign-trained doctors,4.306
+DEU,Germany,2003,,,% of foreign-trained doctors,4.608
+DEU,Germany,2004,,,% of foreign-trained doctors,4.801
+DEU,Germany,2005,,,% of foreign-trained doctors,4.886
+DEU,Germany,2006,,,% of foreign-trained doctors,5.169
+DEU,Germany,2007,,,% of foreign-trained doctors,5.363
+DEU,Germany,2008,,,% of foreign-trained doctors,5.731
+DEU,Germany,2009,,,% of foreign-trained doctors,6.157
+DEU,Germany,2010,,,% of foreign-trained doctors,6.565
+DEU,Germany,2011,,,% of foreign-trained doctors,7.301
+DEU,Germany,2012,,,% of foreign-trained doctors,8.164
+DEU,Germany,2013,,,% of foreign-trained doctors,8.84
+DEU,Germany,2014,,,% of foreign-trained doctors,9.53
+DEU,Germany,2015,,,% of foreign-trained doctors,10.258
+DEU,Germany,2016,,,% of foreign-trained doctors,11.04
+DEU,Germany,2017,,,% of foreign-trained doctors,11.88
+DEU,Germany,2018,Avoidable mortality (preventable+treatable),183116.0,% of foreign-trained doctors,12.51
+DEU,Germany,2019,Avoidable mortality (preventable+treatable),177503.0,% of foreign-trained doctors,13.14
+DEU,Germany,2020,Avoidable mortality (preventable+treatable),186511.0,% of foreign-trained doctors,13.77
+DEU,Germany,2021,,,% of foreign-trained doctors,13.78
+DNK,Denmark,2000,,,% of foreign-trained doctors,3.83
+DNK,Denmark,2001,,,% of foreign-trained doctors,3.89
+DNK,Denmark,2002,,,% of foreign-trained doctors,4.51
+DNK,Denmark,2003,,,% of foreign-trained doctors,4.99
+DNK,Denmark,2004,,,% of foreign-trained doctors,5.7
+DNK,Denmark,2005,,,% of foreign-trained doctors,6.47
+DNK,Denmark,2006,,,% of foreign-trained doctors,6.95
+DNK,Denmark,2007,,,% of foreign-trained doctors,7.4
+DNK,Denmark,2008,,,% of foreign-trained doctors,7.86
+DNK,Denmark,2009,,,% of foreign-trained doctors,8.36
+DNK,Denmark,2010,,,% of foreign-trained doctors,8.75
+DNK,Denmark,2011,,,% of foreign-trained doctors,8.8
+DNK,Denmark,2012,,,% of foreign-trained doctors,8.72
+DNK,Denmark,2013,,,% of foreign-trained doctors,8.73
+DNK,Denmark,2014,,,% of foreign-trained doctors,8.94
+DNK,Denmark,2015,,,% of foreign-trained doctors,9.15
+DNK,Denmark,2016,,,% of foreign-trained doctors,9.24
+DNK,Denmark,2017,,,% of foreign-trained doctors,9.22
+DNK,Denmark,2018,Avoidable mortality (preventable+treatable),11989.0,% of foreign-trained doctors,9.37
+DNK,Denmark,2019,Avoidable mortality (preventable+treatable),11967.0,% of foreign-trained doctors,9.46
+DNK,Denmark,2020,Avoidable mortality (preventable+treatable),11522.0,% of foreign-trained doctors,9.53
+EST,Estonia,2002,,,% of foreign-trained doctors,0.0
+EST,Estonia,2003,,,% of foreign-trained doctors,0.03
+EST,Estonia,2004,,,% of foreign-trained doctors,0.15
+EST,Estonia,2005,,,% of foreign-trained doctors,0.37
+EST,Estonia,2006,,,% of foreign-trained doctors,0.56
+EST,Estonia,2007,,,% of foreign-trained doctors,0.74
+EST,Estonia,2008,,,% of foreign-trained doctors,1.0
+EST,Estonia,2009,,,% of foreign-trained doctors,1.26
+EST,Estonia,2010,,,% of foreign-trained doctors,1.42
+EST,Estonia,2011,,,% of foreign-trained doctors,1.73
+EST,Estonia,2012,,,% of foreign-trained doctors,2.01
+EST,Estonia,2013,,,% of foreign-trained doctors,2.35
+EST,Estonia,2014,,,% of foreign-trained doctors,2.64
+EST,Estonia,2015,,,% of foreign-trained doctors,3.04
+EST,Estonia,2016,,,% of foreign-trained doctors,3.31
+EST,Estonia,2017,,,% of foreign-trained doctors,3.57
+EST,Estonia,2018,Avoidable mortality (preventable+treatable),4532.0,% of foreign-trained doctors,3.86
+EST,Estonia,2019,Avoidable mortality (preventable+treatable),4296.0,% of foreign-trained doctors,3.94
+EST,Estonia,2020,Avoidable mortality (preventable+treatable),4565.0,% of foreign-trained doctors,4.06
+EST,Estonia,2021,Avoidable mortality (preventable+treatable),5435.0,% of foreign-trained doctors,4.16
+EST,Estonia,2022,,,% of foreign-trained doctors,4.32
+FIN,Finland,2000,,,% of foreign-trained doctors,5.02
+FIN,Finland,2001,,,% of foreign-trained doctors,5.24
+FIN,Finland,2002,,,% of foreign-trained doctors,5.38
+FIN,Finland,2003,,,% of foreign-trained doctors,5.62
+FIN,Finland,2004,,,% of foreign-trained doctors,6.25
+FIN,Finland,2005,,,% of foreign-trained doctors,8.18
+FIN,Finland,2006,,,% of foreign-trained doctors,8.45
+FIN,Finland,2007,,,% of foreign-trained doctors,8.82
+FIN,Finland,2008,,,% of foreign-trained doctors,9.26
+FIN,Finland,2009,,,% of foreign-trained doctors,9.53
+FIN,Finland,2010,,,% of foreign-trained doctors,10.46
+FIN,Finland,2011,,,% of foreign-trained doctors,15.39
+FIN,Finland,2012,,,% of foreign-trained doctors,15.88
+FIN,Finland,2013,,,% of foreign-trained doctors,16.46
+FIN,Finland,2014,,,% of foreign-trained doctors,16.88
+FIN,Finland,2015,,,% of foreign-trained doctors,17.27
+FIN,Finland,2016,,,% of foreign-trained doctors,17.54
+FIN,Finland,2017,,,% of foreign-trained doctors,17.96
+FIN,Finland,2018,Avoidable mortality (preventable+treatable),12392.0,% of foreign-trained doctors,18.27
+FIN,Finland,2019,Avoidable mortality (preventable+treatable),12151.0,% of foreign-trained doctors,18.69
+FIN,Finland,2020,Avoidable mortality (preventable+treatable),12472.0,% of foreign-trained doctors,19.12
+FIN,Finland,2021,,,% of foreign-trained doctors,19.5
+GBR,United Kingdom,2008,,,% of foreign-trained doctors,29.88
+GBR,United Kingdom,2009,,,% of foreign-trained doctors,30.12
+GBR,United Kingdom,2010,,,% of foreign-trained doctors,29.8
+GBR,United Kingdom,2011,,,% of foreign-trained doctors,29.29
+GBR,United Kingdom,2012,,,% of foreign-trained doctors,29.01
+GBR,United Kingdom,2013,,,% of foreign-trained doctors,28.98
+GBR,United Kingdom,2014,,,% of foreign-trained doctors,28.46
+GBR,United Kingdom,2015,,,% of foreign-trained doctors,27.496
+GBR,United Kingdom,2016,,,% of foreign-trained doctors,28.38
+GBR,United Kingdom,2017,,,% of foreign-trained doctors,28.663
+GBR,United Kingdom,2018,Avoidable mortality (preventable+treatable),139499.0,% of foreign-trained doctors,29.23
+GBR,United Kingdom,2019,Avoidable mortality (preventable+treatable),137442.0,% of foreign-trained doctors,30.34
+GBR,United Kingdom,2020,Avoidable mortality (preventable+treatable),158761.0,% of foreign-trained doctors,30.76
+HUN,Hungary,2004,,,% of foreign-trained doctors,7.687
+HUN,Hungary,2005,,,% of foreign-trained doctors,7.698
+HUN,Hungary,2006,,,% of foreign-trained doctors,7.695
+HUN,Hungary,2007,,,% of foreign-trained doctors,7.697
+HUN,Hungary,2008,,,% of foreign-trained doctors,7.709
+HUN,Hungary,2009,,,% of foreign-trained doctors,7.684
+HUN,Hungary,2010,,,% of foreign-trained doctors,7.726
+HUN,Hungary,2011,,,% of foreign-trained doctors,7.659
+HUN,Hungary,2012,,,% of foreign-trained doctors,7.425
+HUN,Hungary,2013,,,% of foreign-trained doctors,7.561
+HUN,Hungary,2014,,,% of foreign-trained doctors,7.569
+HUN,Hungary,2015,,,% of foreign-trained doctors,7.787
+HUN,Hungary,2016,,,% of foreign-trained doctors,7.803
+HUN,Hungary,2017,,,% of foreign-trained doctors,8.03
+HUN,Hungary,2018,Avoidable mortality (preventable+treatable),46914.0,% of foreign-trained doctors,8.09
+HUN,Hungary,2019,Avoidable mortality (preventable+treatable),45856.0,% of foreign-trained doctors,8.205
+HUN,Hungary,2020,,,% of foreign-trained doctors,8.18
+HUN,Hungary,2021,,,% of foreign-trained doctors,8.187
+IRL,Ireland,2011,,,% of foreign-trained doctors,35.658
+IRL,Ireland,2012,,,% of foreign-trained doctors,32.639
+IRL,Ireland,2013,,,% of foreign-trained doctors,34.218
+IRL,Ireland,2014,,,% of foreign-trained doctors,36.069
+IRL,Ireland,2015,,,% of foreign-trained doctors,39.029
+IRL,Ireland,2016,,,% of foreign-trained doctors,41.62
+IRL,Ireland,2017,,,% of foreign-trained doctors,42.33
+IRL,Ireland,2018,Avoidable mortality (preventable+treatable),7801.0,% of foreign-trained doctors,41.64
+IRL,Ireland,2019,,,% of foreign-trained doctors,41.35
+IRL,Ireland,2020,,,% of foreign-trained doctors,40.19
+IRL,Ireland,2021,,,% of foreign-trained doctors,40.45
+ISR,Israel,2000,,,% of foreign-trained doctors,64.45
+ISR,Israel,2001,,,% of foreign-trained doctors,64.3
+ISR,Israel,2002,,,% of foreign-trained doctors,64.17
+ISR,Israel,2003,,,% of foreign-trained doctors,63.81
+ISR,Israel,2004,,,% of foreign-trained doctors,63.36
+ISR,Israel,2005,,,% of foreign-trained doctors,62.66
+ISR,Israel,2006,,,% of foreign-trained doctors,62.04
+ISR,Israel,2007,,,% of foreign-trained doctors,61.4
+ISR,Israel,2008,,,% of foreign-trained doctors,60.7
+ISR,Israel,2009,,,% of foreign-trained doctors,60.31
+ISR,Israel,2010,,,% of foreign-trained doctors,59.97
+ISR,Israel,2011,,,% of foreign-trained doctors,59.84
+ISR,Israel,2012,,,% of foreign-trained doctors,59.48
+ISR,Israel,2013,,,% of foreign-trained doctors,59.11
+ISR,Israel,2014,,,% of foreign-trained doctors,58.56
+ISR,Israel,2015,,,% of foreign-trained doctors,58.48
+ISR,Israel,2016,,,% of foreign-trained doctors,58.12
+ISR,Israel,2017,,,% of foreign-trained doctors,57.84
+ISR,Israel,2018,Avoidable mortality (preventable+treatable),9408.0,% of foreign-trained doctors,57.92
+ISR,Israel,2019,Avoidable mortality (preventable+treatable),9671.0,% of foreign-trained doctors,57.81
+ISR,Israel,2020,Avoidable mortality (preventable+treatable),10468.0,% of foreign-trained doctors,57.83
+ISR,Israel,2021,,,% of foreign-trained doctors,57.82
+ISR,Israel,2022,,,% of foreign-trained doctors,57.98
+ITA,Italy,2000,,,% of foreign-trained doctors,0.42
+ITA,Italy,2001,,,% of foreign-trained doctors,0.44
+ITA,Italy,2002,,,% of foreign-trained doctors,0.46
+ITA,Italy,2003,,,% of foreign-trained doctors,0.49
+ITA,Italy,2004,,,% of foreign-trained doctors,0.61
+ITA,Italy,2005,,,% of foreign-trained doctors,0.67
+ITA,Italy,2006,,,% of foreign-trained doctors,0.7
+ITA,Italy,2007,,,% of foreign-trained doctors,0.72
+ITA,Italy,2008,,,% of foreign-trained doctors,0.74
+ITA,Italy,2009,,,% of foreign-trained doctors,0.77
+ITA,Italy,2010,,,% of foreign-trained doctors,0.8
+ITA,Italy,2011,,,% of foreign-trained doctors,0.82
+ITA,Italy,2012,,,% of foreign-trained doctors,0.83
+ITA,Italy,2013,,,% of foreign-trained doctors,0.84
+ITA,Italy,2014,,,% of foreign-trained doctors,0.83
+ITA,Italy,2015,,,% of foreign-trained doctors,0.83
+ITA,Italy,2016,,,% of foreign-trained doctors,0.83
+ITA,Italy,2017,,,% of foreign-trained doctors,0.82
+ITA,Italy,2018,Avoidable mortality (preventable+treatable),99706.0,% of foreign-trained doctors,0.84
+ITA,Italy,2019,Avoidable mortality (preventable+treatable),98149.0,% of foreign-trained doctors,0.88
+ITA,Italy,2020,,,% of foreign-trained doctors,0.9
+ITA,Italy,2021,,,% of foreign-trained doctors,0.94
+ITA,Italy,2022,,,% of foreign-trained doctors,0.97
+LTU,Lithuania,2014,,,% of foreign-trained doctors,0.26
+LTU,Lithuania,2015,,,% of foreign-trained doctors,0.29
+LTU,Lithuania,2016,,,% of foreign-trained doctors,0.34
+LTU,Lithuania,2017,,,% of foreign-trained doctors,0.43
+LTU,Lithuania,2018,Avoidable mortality (preventable+treatable),12232.0,% of foreign-trained doctors,0.49
+LTU,Lithuania,2019,Avoidable mortality (preventable+treatable),12071.0,% of foreign-trained doctors,0.58
+LTU,Lithuania,2020,Avoidable mortality (preventable+treatable),14129.0,% of foreign-trained doctors,0.64
+LTU,Lithuania,2021,Avoidable mortality (preventable+treatable),15642.0,% of foreign-trained doctors,0.57
+LTU,Lithuania,2022,,,% of foreign-trained doctors,0.72
+LUX,Luxembourg,2000,,,% of foreign-trained doctors,100.0
+LUX,Luxembourg,2001,,,% of foreign-trained doctors,100.0
+LUX,Luxembourg,2002,,,% of foreign-trained doctors,100.0
+LUX,Luxembourg,2003,,,% of foreign-trained doctors,100.0
+LUX,Luxembourg,2004,,,% of foreign-trained doctors,100.0
+LUX,Luxembourg,2005,,,% of foreign-trained doctors,100.0
+LUX,Luxembourg,2006,,,% of foreign-trained doctors,100.0
+LUX,Luxembourg,2007,,,% of foreign-trained doctors,100.0
+LUX,Luxembourg,2008,,,% of foreign-trained doctors,100.0
+LUX,Luxembourg,2009,,,% of foreign-trained doctors,100.0
+LUX,Luxembourg,2010,,,% of foreign-trained doctors,100.0
+LUX,Luxembourg,2011,,,% of foreign-trained doctors,100.0
+LUX,Luxembourg,2012,,,% of foreign-trained doctors,100.0
+LUX,Luxembourg,2013,,,% of foreign-trained doctors,100.0
+LUX,Luxembourg,2014,,,% of foreign-trained doctors,100.0
+LUX,Luxembourg,2015,,,% of foreign-trained doctors,100.0
+LUX,Luxembourg,2016,,,% of foreign-trained doctors,100.0
+LUX,Luxembourg,2017,,,% of foreign-trained doctors,100.0
+LUX,Luxembourg,2018,Avoidable mortality (preventable+treatable),895.0,% of foreign-trained doctors,100.0
+LUX,Luxembourg,2019,Avoidable mortality (preventable+treatable),854.0,% of foreign-trained doctors,100.0
+LUX,Luxembourg,2020,Avoidable mortality (preventable+treatable),939.0,% of foreign-trained doctors,100.0
+LUX,Luxembourg,2021,Avoidable mortality (preventable+treatable),919.0,% of foreign-trained doctors,100.0
+LVA,Latvia,2004,,,% of foreign-trained doctors,8.14
+LVA,Latvia,2005,,,% of foreign-trained doctors,8.08
+LVA,Latvia,2006,,,% of foreign-trained doctors,8.06
+LVA,Latvia,2007,,,% of foreign-trained doctors,8.06
+LVA,Latvia,2008,,,% of foreign-trained doctors,7.91
+LVA,Latvia,2009,,,% of foreign-trained doctors,7.41
+LVA,Latvia,2010,,,% of foreign-trained doctors,7.01
+LVA,Latvia,2011,,,% of foreign-trained doctors,7.15
+LVA,Latvia,2012,,,% of foreign-trained doctors,7.09
+LVA,Latvia,2013,,,% of foreign-trained doctors,6.96
+LVA,Latvia,2014,,,% of foreign-trained doctors,6.74
+LVA,Latvia,2015,,,% of foreign-trained doctors,6.52
+LVA,Latvia,2016,,,% of foreign-trained doctors,6.25
+LVA,Latvia,2017,,,% of foreign-trained doctors,5.95
+LVA,Latvia,2018,Avoidable mortality (preventable+treatable),9174.0,% of foreign-trained doctors,5.53
+LVA,Latvia,2019,Avoidable mortality (preventable+treatable),8556.0,% of foreign-trained doctors,5.27
+LVA,Latvia,2020,Avoidable mortality (preventable+treatable),8891.0,% of foreign-trained doctors,5.95
+LVA,Latvia,2021,Avoidable mortality (preventable+treatable),11517.0,% of foreign-trained doctors,5.85
+NLD,Netherlands,2001,,,% of foreign-trained doctors,1.775
+NLD,Netherlands,2002,,,% of foreign-trained doctors,1.887
+NLD,Netherlands,2003,,,% of foreign-trained doctors,1.981
+NLD,Netherlands,2004,,,% of foreign-trained doctors,1.943
+NLD,Netherlands,2005,,,% of foreign-trained doctors,2.08
+NLD,Netherlands,2006,,,% of foreign-trained doctors,2.089
+NLD,Netherlands,2007,,,% of foreign-trained doctors,2.189
+NLD,Netherlands,2008,,,% of foreign-trained doctors,2.312
+NLD,Netherlands,2009,,,% of foreign-trained doctors,2.487
+NLD,Netherlands,2010,,,% of foreign-trained doctors,2.626
+NLD,Netherlands,2011,,,% of foreign-trained doctors,2.603
+NLD,Netherlands,2012,,,% of foreign-trained doctors,2.08
+NLD,Netherlands,2013,,,% of foreign-trained doctors,2.051
+NLD,Netherlands,2014,,,% of foreign-trained doctors,2.128
+NLD,Netherlands,2015,,,% of foreign-trained doctors,2.178
+NLD,Netherlands,2016,,,% of foreign-trained doctors,2.218
+NLD,Netherlands,2017,,,% of foreign-trained doctors,2.744
+NLD,Netherlands,2018,Avoidable mortality (preventable+treatable),31209.0,% of foreign-trained doctors,3.21
+NLD,Netherlands,2019,Avoidable mortality (preventable+treatable),30297.0,% of foreign-trained doctors,3.583
+NLD,Netherlands,2020,Avoidable mortality (preventable+treatable),33463.0,% of foreign-trained doctors,3.565
+NLD,Netherlands,2021,,,% of foreign-trained doctors,3.613
+POL,Poland,2008,,,% of foreign-trained doctors,2.11
+POL,Poland,2009,,,% of foreign-trained doctors,2.11
+POL,Poland,2010,,,% of foreign-trained doctors,2.05
+POL,Poland,2011,,,% of foreign-trained doctors,1.76
+POL,Poland,2012,,,% of foreign-trained doctors,1.76
+POL,Poland,2013,,,% of foreign-trained doctors,1.78
+POL,Poland,2014,,,% of foreign-trained doctors,1.78
+POL,Poland,2015,,,% of foreign-trained doctors,1.8
+POL,Poland,2016,,,% of foreign-trained doctors,1.84
+POL,Poland,2017,,,% of foreign-trained doctors,1.88
+POL,Poland,2018,Avoidable mortality (preventable+treatable),122685.0,% of foreign-trained doctors,1.94
+POL,Poland,2019,Avoidable mortality (preventable+treatable),124735.0,% of foreign-trained doctors,2.09
+POL,Poland,2020,Avoidable mortality (preventable+treatable),151269.0,% of foreign-trained doctors,2.23
+POL,Poland,2021,,,% of foreign-trained doctors,2.69
+PRT,Portugal,2017,,,% of foreign-trained doctors,11.99
+PRT,Portugal,2018,Avoidable mortality (preventable+treatable),22014.0,,
+PRT,Portugal,2019,Avoidable mortality (preventable+treatable),21615.0,,
+SVK,Slovak Republic,2010,,,% of foreign-trained doctors,2.63
+SVK,Slovak Republic,2011,,,% of foreign-trained doctors,2.994
+SVK,Slovak Republic,2018,Avoidable mortality (preventable+treatable),19385.0,,
+SVK,Slovak Republic,2019,Avoidable mortality (preventable+treatable),19100.0,,
+SVN,Slovenia,2010,,,% of foreign-trained doctors,10.66
+SVN,Slovenia,2011,,,% of foreign-trained doctors,11.79
+SVN,Slovenia,2012,,,% of foreign-trained doctors,14.0
+SVN,Slovenia,2013,,,% of foreign-trained doctors,14.42
+SVN,Slovenia,2014,,,% of foreign-trained doctors,14.18
+SVN,Slovenia,2015,,,% of foreign-trained doctors,14.1
+SVN,Slovenia,2016,,,% of foreign-trained doctors,18.53
+SVN,Slovenia,2017,,,% of foreign-trained doctors,17.3
+SVN,Slovenia,2018,Avoidable mortality (preventable+treatable),4912.0,,
+SVN,Slovenia,2019,Avoidable mortality (preventable+treatable),4843.0,% of foreign-trained doctors,16.457
+SVN,Slovenia,2020,Avoidable mortality (preventable+treatable),5483.0,% of foreign-trained doctors,16.045
+SVN,Slovenia,2021,,,% of foreign-trained doctors,15.809
+SVN,Slovenia,2022,,,% of foreign-trained doctors,15.4
+SWE,Sweden,2000,,,% of foreign-trained doctors,13.959
+SWE,Sweden,2001,,,% of foreign-trained doctors,14.929
+SWE,Sweden,2002,,,% of foreign-trained doctors,15.915
+SWE,Sweden,2003,,,% of foreign-trained doctors,16.701
+SWE,Sweden,2004,,,% of foreign-trained doctors,17.562
+SWE,Sweden,2005,,,% of foreign-trained doctors,18.504
+SWE,Sweden,2006,,,% of foreign-trained doctors,19.343
+SWE,Sweden,2007,,,% of foreign-trained doctors,20.396
+SWE,Sweden,2008,,,% of foreign-trained doctors,21.639
+SWE,Sweden,2009,,,% of foreign-trained doctors,22.543
+SWE,Sweden,2010,,,% of foreign-trained doctors,23.541
+SWE,Sweden,2011,,,% of foreign-trained doctors,24.283
+SWE,Sweden,2012,,,% of foreign-trained doctors,25.101
+SWE,Sweden,2013,,,% of foreign-trained doctors,26.071
+SWE,Sweden,2014,,,% of foreign-trained doctors,27.14
+SWE,Sweden,2015,,,% of foreign-trained doctors,26.301
+SWE,Sweden,2016,,,% of foreign-trained doctors,27.327
+SWE,Sweden,2017,,,% of foreign-trained doctors,28.019
+SWE,Sweden,2018,Avoidable mortality (preventable+treatable),17040.0,% of foreign-trained doctors,28.793
+SWE,Sweden,2019,,,% of foreign-trained doctors,29.436
+SWE,Sweden,2020,,,% of foreign-trained doctors,30.215
+TUR,Türkiye,2000,,,% of foreign-trained doctors,0.06
+TUR,Türkiye,2001,,,% of foreign-trained doctors,0.13
+TUR,Türkiye,2002,,,% of foreign-trained doctors,0.17
+TUR,Türkiye,2003,,,% of foreign-trained doctors,0.19
+TUR,Türkiye,2004,,,% of foreign-trained doctors,0.21
+TUR,Türkiye,2005,,,% of foreign-trained doctors,0.22
+TUR,Türkiye,2006,,,% of foreign-trained doctors,0.23
+TUR,Türkiye,2007,,,% of foreign-trained doctors,0.23
+TUR,Türkiye,2008,,,% of foreign-trained doctors,0.22
+TUR,Türkiye,2009,,,% of foreign-trained doctors,0.21
+TUR,Türkiye,2010,,,% of foreign-trained doctors,0.21
+TUR,Türkiye,2011,,,% of foreign-trained doctors,0.21
+TUR,Türkiye,2012,,,% of foreign-trained doctors,0.2
+TUR,Türkiye,2013,,,% of foreign-trained doctors,0.2
+TUR,Türkiye,2014,,,% of foreign-trained doctors,0.19
+TUR,Türkiye,2015,,,% of foreign-trained doctors,0.19
+TUR,Türkiye,2018,Avoidable mortality (preventable+treatable),148993.0,,
+TUR,Türkiye,2019,Avoidable mortality (preventable+treatable),143142.0,,
+USA,United States,2006,,,% of foreign-trained doctors,25.09
+USA,United States,2007,,,% of foreign-trained doctors,25.06
+USA,United States,2008,,,% of foreign-trained doctors,25.08
+USA,United States,2010,,,% of foreign-trained doctors,24.84
+USA,United States,2011,,,% of foreign-trained doctors,24.66
+USA,United States,2012,,,% of foreign-trained doctors,24.89
+USA,United States,2013,,,% of foreign-trained doctors,24.95
+USA,United States,2014,,,% of foreign-trained doctors,24.86
+USA,United States,2015,,,% of foreign-trained doctors,24.93
+USA,United States,2016,,,% of foreign-trained doctors,24.99
+USA,United States,2018,Avoidable mortality (preventable+treatable),917832.0,,
+USA,United States,2019,Avoidable mortality (preventable+treatable),920265.0,,
+USA,United States,2020,Avoidable mortality (preventable+treatable),1149811.0,,
