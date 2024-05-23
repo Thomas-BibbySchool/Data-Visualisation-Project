@@ -16,7 +16,7 @@ body, footer {
 .content {
     max-width: 850px;
     margin: auto;
-    flex: 1; 
+    flex: 1;
 }
 
 #graph {
