@@ -1,83 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Visualization</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="scatterplot.js"></script>
-    <script src="heatmap.js"></script>
-    <script src="linegraph.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="content">
-      <h1>The effects of hospital capacity on Covid deaths</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut purus elit,
-        vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum
-        gravida mauris.
-      </p>
-      <br />
-      <div id="scatterplot"></div>
-      <br /><br />
-      <!-- Scatter Plot Slider -->
-      <div id="slider">
-        <label for="yearSliderScatter">Year: </label>
-        <input
-          type="range"
-          id="yearSliderScatter"
-          min="2018"
-          max="2021"
-          value="2018"
-          step="1"
-        />
-        <span id="yearDisplay">2018</span>
-      </div>
-      <!-- Scatter Plot Slider End -->
-      <br /><br /><br />
-
-      <div class="heatmap-container">
-        <h2 id="heatmap-title">Percentage of foreign-trained doctors</h2>
-        <div id="legendContainer">
-          <svg id="legend" width="300" height="50"></svg>
-        </div>
-        <div id="heatmap"></div>
-        <br />
-        <input
-          type="range"
-          min="2018"
-          max="2021"
-          value="2018"
-          step="1"
-          id="yearSlider"
-          oninput="updateHeatmap(this.value)"
-        />
-        <label for="yearSlider" id="yearLabel">Year: 2018</label>
-        <button id="toggleData" onclick="toggle()">Switch Data</button>
-        <br /><br />
-        <button onclick="zoomToNorthAmerica()">Zoom to North America</button>
-        <button onclick="zoomToEurope()">Zoom to Europe</button>
-        <button onclick="zoomToOceanic()">Zoom to Oceanic</button>
-        <button onclick="resetZoom()">Reset Zoom</button>
-        <br /><br />
-      </div>
-
-      <div class="linegraph-container">
-        <div id="linegraph"></div>
-      </div>
-      <br /><br /><br />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Visualization</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="scatterplot.js"></script>
+  <script src="heatmap.js"></script>
+  <script src="linegraph.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="content">
+    <h1>The effects of hospital capacity on Covid deaths</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut purus elit,
+      vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum
+      gravida mauris.
+    </p>
+    <br />
+    <div id="scatterplot"></div>
+    <br /><br />
+    <!-- Scatter Plot Slider -->
+    <div id="slider">
+      <label for="yearSliderScatter">Year: </label>
+      <input
+        type="range"
+        id="yearSliderScatter"
+        min="2018"
+        max="2021"
+        value="2018"
+        step="1"
+      />
+      <span id="yearDisplay">2018</span>
     </div>
-    <div
-      id="tooltip"
-      class="tooltip"
-      style="opacity: 0; position: absolute; pointer-events: none"
-    ></div>
-    <footer>
-      <p>Student Details</p>
-      <p>Hasindu Vithanage - 104824660 and Thomas Bibby - 102564676</p>
-      <p>Data Visualization Assignment</p>
-    </footer>
-  </body>
+    <!-- Scatter Plot Slider End -->
+    <br /><br /><br />
+
+    <div class="heatmap-container">
+      <h2 id="heatmap-title">Percentage of foreign-trained doctors</h2>
+      <div id="legendContainer">
+        <svg id="legend" width="300" height="50"></svg>
+      </div>
+      <div id="heatmap"></div>
+      <br />
+      <input
+        type="range"
+        min="2018"
+        max="2021"
+        value="2018"
+        step="1"
+        id="yearSlider"
+        oninput="updateHeatmap(this.value)"
+      />
+      <label for="yearSlider" id="yearLabel">Year: 2018</label>
+      <br />
+      <button id="toggleData" onclick="toggle()">Switch Data</button>
+      <br /><br />
+
+      <!-- Radio buttons for data selection -->
+      <input type="radio" id="showDoctors" name="dataSelection" value="doctors" checked onclick="showDoctorsData()">
+      <label for="showDoctors">Country Doctors Data</label><br>
+      <input type="radio" id="showOutflow" name="dataSelection" value="outflow" onclick="showOutflowData()">
+      <label for="showOutflow">Doctor Outflow Data</label><br>
+      <input type="radio" id="showBoth" name="dataSelection" value="both" onclick="showBothData()">
+      <label for="showBoth">Show Both</label>
+      <br /><br />
+
+      <button onclick="zoomToNorthAmerica()">Zoom to North America</button>
+      <button onclick="zoomToEurope()">Zoom to Europe</button>
+      <button onclick="zoomToOceanic()">Zoom to Oceanic</button>
+      <button onclick="resetZoom()">Reset Zoom</button>
+      <br /><br />
+    </div>
+
+    <div class="linegraph-container">
+      <div id="linegraph"></div>
+    </div>
+    <br /><br /><br />
+  </div>
+  <div
+    id="tooltip"
+    class="tooltip"
+    style="opacity: 0; position: absolute; pointer-events: none"
+  ></div>
+  <footer>
+    <p>Student Details</p>
+    <p>Hasindu Vithanage - 104824660 and Thomas Bibby - 102564676</p>
+    <p>Data Visualization Assignment</p>
+  </footer>
+</body>
 </html>
