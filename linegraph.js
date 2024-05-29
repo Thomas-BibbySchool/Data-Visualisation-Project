@@ -8,8 +8,12 @@ document.addEventListener('DOMContentLoaded', function initLineGraph() {
     var svg = d3.select("#linegraph").append("svg")
         .attr("width", svgWidth)
         .attr("height", svgHeight)
+        .attr("viewBox", `0 0 ${svgWidth} ${svgHeight + 20}`) // Adjust the viewBox here
+        .attr("preserveAspectRatio", "xMidYMid meet")
+        .style("display", "block")
+        .style("margin", "auto")
         .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        .attr("transform", "translate(" + margin.left + "," + (margin.top + 20) + ")"); // Adjust transformation to move content down
 
     var x = d3.scaleLinear().range([0, width]);
     var y = d3.scaleLinear().range([height, 0]);

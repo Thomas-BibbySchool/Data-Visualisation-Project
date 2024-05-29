@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function initScatterplot() {
-    var w = 850;
+    var w = 900;
     var h = 500;
-    var paddingXScale = 60;
+    var paddingXScale = 70;
     var paddingYScale = 60;
 
     // Load CSV data directly
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function initScatterplot() {
 
         // Tooltip div setup
         var tooltip = d3.select("body").append("div")
-            .attr("class", "tooltip")
+            .attr("class", "line-tooltip")
             .style("opacity", 0)
             .style("position", "absolute")
             .style("padding", "10px")
@@ -119,17 +119,9 @@ document.addEventListener('DOMContentLoaded', function initScatterplot() {
             svg.append("text")
                 .attr("text-anchor", "end")
                 .attr("transform", "rotate(-90)")
-                .attr("y", 10)
+                .attr("y", 15)
                 .attr("x", -h / 2 + paddingYScale)
                 .text("Avoidable Mortality");
-
-            // svg.append("text")
-            //     .attr("text-anchor", "end")
-            //     .attr("transform", "rotate(-90)")
-            //     .attr("y", 30)
-            //     .attr("x", -h / 2 + paddingYScale + 50)
-            //     .text("(% of all patients waiting more than 3 months)");
-            //     // .style("font-style", "italic");
         }
 
         // Initial plot

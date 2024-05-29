@@ -3,25 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scatter Plot</title>
+    <title>Scatter Plot Visualization</title>
     <link rel="stylesheet" href="styles2.css">
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="scatterplot.js"></script>
 </head>
 <body>
-<div class="navbar">
-    <a href="index2.html">Home</a>
-    <a href="heatmap_linegraph.html">Heatmap & Line Graph</a>
-</div>
+<header>
+    <nav class="navbar">
+        <a href="index2.html">Home</a>
+        <a href="scatterplot.html">Scatter Plot Visualization</a>
+        <a href="heatmap_linegraph.html">Heatmap and Line Graph Visualization</a>
+    </nav>
+</header>
+
 <div class="content">
-    <h1>Scatter Plot: The effects of hospital capacity on Covid deaths</h1>
-    <div id="scatterplot"></div>
+    <h1>The effects of hospital capacity on Covid deaths</h1>
+    <p>
+        Our scatter plot visualization provides an insightful look into
+        how hospital capacity influences Covid-19 mortality rates across
+        different regions. This interactive chart allows you to select
+        different years and examine the data points for various countries,
+        showcasing how changes in hospital capacity can impact patient
+        outcomes during health crises.
+    </p>
+    <ul>
+        <li><strong>Interactive Features:</strong> Use the slider to change the year and dynamically update the scatter plot.</li>
+        <li><strong>Data Points:</strong> Each point on the plot represents a country, with tooltips providing additional information about the healthcare performance and percentage of foreign-trained doctors.</li>
+    </ul>
+    <p>Explore the scatter plot to understand how robust hospital infrastructures can mitigate the impact of pandemics.</p>
+
     <br><br>
+    <div id="scatterplot"></div>
+    <br>
     <div id="slider">
         <label for="yearSliderScatter">Year: </label>
         <input type="range" id="yearSliderScatter" min="2018" max="2021" value="2018" step="1">
         <span id="yearDisplay">2018</span>
     </div>
+    <br>
 </div>
+<footer>
+    <p>Student Details</p>
+    <p>Hasindu Vithanage - 104824660 and Thomas Bibby - 102564676</p>
+    <p>Data Visualization Assignment</p>
+</footer>
 </body>
 </html>

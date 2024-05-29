@@ -33,7 +33,7 @@ body, footer {
     margin-top: 10px;
 }
 
-.tooltip {
+.heatmap-tooltip {
     background: white;
     border: 1px solid #000;
     padding: 5px 10px;

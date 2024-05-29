@@ -3,54 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heatmap & Line Graph</title>
+    <title>Heatmap and Line Graph Visualization</title>
     <link rel="stylesheet" href="styles2.css">
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="heatmap.js"></script>
     <script src="linegraph.js"></script>
 </head>
 <body>
-<div class="navbar">
-    <a href="index2.html">Home</a>
-    <a href="scatterplot.html">Scatter Plot</a>
-</div>
-<div class="content">
-    <h1>Heatmap & Line Graph: The effects of % of foreign doctors on health performance per country</h1>
-    <br><br>
+<header>
+    <nav class="navbar">
+        <a href="index2.html">Home</a>
+        <a href="scatterplot.html">Scatter Plot Visualization</a>
+        <a href="heatmap_linegraph.html">Heatmap and Line Graph Visualization</a>
+    </nav>
+</header>
 
-    <div class="visualization-container">
-        <div class="heatmap-container">
-            <h2 id="heatmap-title">Percentage of foreign-trained doctors</h2>
-            <div id="legendContainer">
-                <svg id="legend" width="300" height="50"></svg>
-            </div>
-            <div id="heatmap"></div>
-            <br />
-            <input
-                    type="range"
-                    min="2018"
-                    max="2021"
-                    value="2018"
-                    step="1"
-                    id="yearSlider"
-                    oninput="updateHeatmap(this.value)"
-            />
-            <label for="yearSlider" id="yearLabel">Year: 2018</label>
-            <button id="toggleData" onclick="toggle()">Switch Data</button>
-            <br /><br />
-            <button onclick="zoomToNorthAmerica()">Zoom to North America</button>
-            <button onclick="zoomToEurope()">Zoom to Europe</button>
-            <button onclick="zoomToOceanic()">Zoom to Oceanic</button>
-            <button onclick="resetZoom()">Reset Zoom</button>
-            <br /><br />
+<div class="content">
+    <h2>Percentage of foreign-trained doctors</h2>
+    <p>
+        This page combines a heatmap and a line graph to offer
+        a comprehensive view of how the presence of foreign-trained
+        doctors varies across countries and over time. The heatmap
+        displays the percentage of foreign-trained doctors in each
+        country, while the line graph shows trends over the years
+        for selected countries.
+    </p>
+    <ul>
+        <li><strong>Heatmap:</strong> Visualize the global distribution of foreign-trained doctors for selected years. Use the interactive slider to see changes over time and click on any country to get detailed data.</li>
+        <li><strong>Line Graph:</strong> After selecting a country from the heatmap, the line graph will display the percentage of foreign-trained doctors over the years, providing insights into trends and patterns.</li>
+    </ul>
+    <p>Utilize these visualizations to analyze how the integration of foreign-trained doctors into national healthcare systems impacts overall healthcare effectiveness.</p>
+
+    <br><br>
+    <div class="heatmap-container">
+        <div id="legendContainer">
+            <svg id="legend" width="300" height="50"></svg>
         </div>
+        <div id="heatmap"></div>
+        <br>
+        <input type="range" min="2018" max="2021" value="2018" step="1" id="yearSlider" oninput="updateHeatmap(this.value)">
+        <label for="yearSlider" id="yearLabel">Year: 2018</label>
+        <br><br>
+        <button id="toggleData" onclick="toggle()">Switch Data</button>
+        <button onclick="zoomToNorthAmerica()">Zoom to North America</button>
+        <button onclick="zoomToEurope()">Zoom to Europe</button>
+        <button onclick="zoomToOceanic()">Zoom to Oceanic</button>
+        <button onclick="resetZoom()">Reset Zoom</button>
+    </div>
+    <div
+            id="heatmap-tooltip"
+            class="heatmap-tooltip"
+            style="opacity: 0; position: absolute; pointer-events: none"
+    ></div>
+    <br><br><br>
+    <div class="linegraph-container">
+        <br>
         <div id="linegraph"></div>
     </div>
     <br>
-<!--    <input type="range" min="2018" max="2021" value="2018" step="1" id="yearSlider" oninput="updateHeatmap(this.value)">-->
-<!--    <label for="yearSlider" id="yearLabel">Year: 2018</label>-->
-<!--    <button id="toggleData" onclick="toggle()">Switch Data</button>-->
 </div>
-<div id="tooltip" class="tooltip" style="opacity: 0; position: absolute; pointer-events: none"></div>
+<footer>
+    <p>Student Details</p>
+    <p>Hasindu Vithanage - 104824660 and Thomas Bibby - 102564676</p>
+    <p>Data Visualization Assignment</p>
+</footer>
 </body>
 </html>

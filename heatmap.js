@@ -58,7 +58,7 @@ function updateHeatmap(year) {
     g = svg.select("g");
   }
 
-  const tooltip = d3.select("#tooltip");
+  const tooltip = d3.select("#heatmap-tooltip");
   const projection = d3.geoNaturalEarth1()
       .center([0, 0])
       .scale(width / 1.6 / Math.PI)
