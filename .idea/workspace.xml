@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ac541aae-24fb-4879-bf55-0567b534b23a" name="Changes" comment="Created index page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heatmap_linegraph.html" beforeDir="false" afterPath="$PROJECT_DIR$/heatmap_linegraph.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles2.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles2.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +73,7 @@
       <workItem from="1713767013149" duration="205000" />
       <workItem from="1713772552249" duration="87000" />
       <workItem from="1714977937906" duration="685000" />
-      <workItem from="1716977029416" duration="7749000" />
+      <workItem from="1716977029416" duration="8353000" />
     </task>
     <task id="LOCAL-00001" summary="Created index page">
       <option name="closed" value="true" />
