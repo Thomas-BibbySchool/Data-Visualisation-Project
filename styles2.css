@@ -96,7 +96,7 @@ header {
 }
 
 /* Button styling for consistent and appealing look */
-button, .button-link {
+button {
     background-color: #4586a0;
     border: none;
     color: white;
@@ -105,13 +105,14 @@ button, .button-link {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    margin: 4px 2px;
     cursor: pointer;
     border-radius: 4px;
     transition: background-color 0.3s ease;
 }
 
-button:hover, .button-link:hover {
-    background-color: #3586a0;
+button:hover {
+    background-color: #4586a091;
 }
 
 /* Styling for linegraph container and footer for consistency */

@@ -45,11 +45,23 @@
         <label for="yearSlider" id="yearLabel">Year: 2018</label>
         <br><br>
         <button id="toggleData" onclick="toggle()">Switch Data</button>
+        <br /><br />
+
+        <!-- Radio buttons for data selection -->
+        <input type="radio" id="showDoctors" name="dataSelection" value="doctors" checked onclick="showDoctorsData()">
+        <label for="showDoctors">Country Doctors Data</label><br>
+        <input type="radio" id="showOutflow" name="dataSelection" value="outflow" onclick="showOutflowData()">
+        <label for="showOutflow">Doctor Outflow Data</label><br>
+        <input type="radio" id="showBoth" name="dataSelection" value="both" onclick="showBothData()">
+        <label for="showBoth">Show Both</label>
+        <br /><br />
+
         <button onclick="zoomToNorthAmerica()">Zoom to North America</button>
         <button onclick="zoomToEurope()">Zoom to Europe</button>
         <button onclick="zoomToOceanic()">Zoom to Oceanic</button>
         <button onclick="resetZoom()">Reset Zoom</button>
     </div>
+
     <div
             id="heatmap-tooltip"
             class="heatmap-tooltip"
