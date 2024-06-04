@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac541aae-24fb-4879-bf55-0567b534b23a" name="Changes" comment="Created index page">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +75,7 @@
       <workItem from="1714977937906" duration="685000" />
       <workItem from="1716977029416" duration="8767000" />
       <workItem from="1717038826902" duration="839000" />
+      <workItem from="1717498017330" duration="34000" />
     </task>
     <task id="LOCAL-00001" summary="Created index page">
       <option name="closed" value="true" />
