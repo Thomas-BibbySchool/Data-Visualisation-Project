@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function initLineGraph() {
 
     var svgWidth = 600, svgHeight = 300;
-    var margin = { top: 20, right: 20, bottom: 50, left: 70 };
+    var margin = { top: 20, right: 20, bottom: 50, left: 80 };
     var width = svgWidth - margin.left - margin.right;
     var height = svgHeight - margin.top - margin.bottom;
 
