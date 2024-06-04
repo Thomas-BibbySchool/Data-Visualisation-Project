@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function initScatterplot() {
                         .style("opacity", .9);
                     tooltip.html("Country: " + d.Country + "<br/>" +
                         "% Foreign-trained doctors: " + d.ForeignPercent.toFixed(2) + "%" + "<br/>" +
-                        "Health Performance (% of all patients waiting more than 3 months): " + d.HealthPerformance.toFixed(2))
+                        "Avoidable Mortality (preventable + treatable)): " + d.HealthPerformance.toFixed(2))
                         .style("left", (event.pageX) + "px")
                         .style("top", (event.pageY - 28) + "px");
                 })
