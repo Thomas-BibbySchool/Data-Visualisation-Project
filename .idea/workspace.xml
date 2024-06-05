@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac541aae-24fb-4879-bf55-0567b534b23a" name="Changes" comment="Created index page">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ac541aae-24fb-4879-bf55-0567b534b23a" name="Changes" comment="Created index page" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,7 +75,7 @@
       <workItem from="1717038826902" duration="839000" />
       <workItem from="1717498017330" duration="3189000" />
       <workItem from="1717505507089" duration="145000" />
-      <workItem from="1717576694665" duration="1260000" />
+      <workItem from="1717576694665" duration="1656000" />
     </task>
     <task id="LOCAL-00001" summary="Created index page">
       <option name="closed" value="true" />
