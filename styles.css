@@ -2,7 +2,6 @@
 body, footer {
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
 }
 
 ul {
@@ -20,7 +19,6 @@ html, body {
 header {
     background-color: #343a40;
     padding: 10px 0;
-    font-size: 20px;
 }
 
 .navbar {
@@ -37,7 +35,6 @@ header {
     padding: 10px 15px;
     text-decoration: none;
     transition: background-color 0.3s ease;
-    font-size: 22px;
 }
 
 .navbar a:hover, .navbar a:focus {
@@ -45,14 +42,14 @@ header {
     color: black;
 }
 
-/* Content styling */
+/* Content styling  */
 .content {
-    max-width: 1200px;
+    max-width: 850px;
     margin: 20px auto;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     flex: 1;
-    font-size: 22px;
+
 }
 
 /* Styling for visualization containers */
@@ -86,7 +83,6 @@ header {
     padding: 5px 10px;
     border-radius: 5px;
     text-align: center;
-    font-size: 16px;
 }
 
 .tooltip {
@@ -95,7 +91,6 @@ header {
     padding: 5px 10px;
     border-radius: 5px;
     text-align: center;
-    font-size: 16px;
 }
 
 #legendContainer {
@@ -104,7 +99,7 @@ header {
     margin: 20px 0;
 }
 
-/* Button styling */
+/* Button styling  */
 button {
     background-color: #4586a0;
     border: none;
@@ -113,7 +108,7 @@ button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 18px;
+    font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 4px;
@@ -124,14 +119,13 @@ button:hover {
     background-color: #4586a091;
 }
 
-/* Styling for linegraph container and footer */
+/* Styling for linegraph container and footer*/
 .linegraph-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     padding: 20px;
-    font-size: 18px;
 }
 
 #linegraph {
@@ -139,10 +133,11 @@ button:hover {
     height: 100%;
 }
 
+
 footer {
     background-color: #343a40;
     padding: 20px 0;
-    font-size: 20px;
+    font-size: 14px;
     color: #f2f2f2;
     border-top: 1px solid #ccc;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
@@ -151,3 +146,5 @@ footer {
 footer p {
     margin: 5px 0;
 }
+
+
